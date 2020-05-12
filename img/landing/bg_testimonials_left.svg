@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1394px" height="1197px" viewBox="0 0 1394 1197" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="8.61779604%" x2="50%" y2="91.5687334%" id="linearGradient-1">
+            <stop stop-color="#B1CAFF" offset="0%"></stop>
+            <stop stop-color="#88ADFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sing_landing-copy" transform="translate(0.000000, -4516.000000)">
+            <g id="Group-5" transform="translate(-563.000000, 4398.000000)">
+                <rect id="Rectangle-16-Copy-21" fill="url(#linearGradient-1)" opacity="0.25" transform="translate(1033.575406, 712.391441) rotate(-68.000000) translate(-1033.575406, -712.391441) " x="653.928291" y="-248.023537" width="759.29423" height="1920.82996" rx="365"></rect>
+                <rect id="Rectangle-16-Copy-22" fill="url(#linearGradient-1)" opacity="0.189365672" transform="translate(698.852885, 352.035689) rotate(-9.000000) translate(-698.852885, -352.035689) " x="666.207884" y="265.035689" width="65.2900009" height="174" rx="32.6450005"></rect>
+                <rect id="Rectangle-16-Copy-18" fill="url(#linearGradient-1)" transform="translate(995.071059, 484.071059) rotate(8.000000) translate(-995.071059, -484.071059) " x="979.071059" y="468.071059" width="32" height="32" rx="16"></rect>
+                <rect id="Rectangle-16-Copy-24" fill="url(#linearGradient-1)" transform="translate(686.550529, 942.742714) rotate(8.000000) translate(-686.550529, -942.742714) " x="662.550529" y="918.742714" width="48" height="48" rx="24"></rect>
+                <rect id="Rectangle-16-Copy-26" fill="url(#linearGradient-1)" transform="translate(1800.167347, 1041.806291) rotate(8.000000) translate(-1800.167347, -1041.806291) " x="1778.66735" y="1017.58129" width="43" height="48.4500008" rx="21.5"></rect>
+                <rect id="Rectangle-16-Copy-23" fill="url(#linearGradient-1)" opacity="0.200967817" transform="translate(1045.196683, 1091.374551) rotate(8.000000) translate(-1045.196683, -1091.374551) " x="1017.19668" y="1063.37455" width="56" height="56" rx="28"></rect>
+                <rect id="Rectangle-16-Copy-19" fill="#FFFFFF" transform="translate(875.611947, 697.693264) rotate(-372.000000) translate(-875.611947, -697.693264) " x="850.611947" y="644.025012" width="50" height="107.336503" rx="25"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

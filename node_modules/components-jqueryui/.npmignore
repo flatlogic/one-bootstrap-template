@@ -1,0 +1,5 @@
+components
+composer.lock
+vendor
+.DS_Store
+/.project

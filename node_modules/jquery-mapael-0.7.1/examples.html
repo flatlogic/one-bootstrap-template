@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Demo</title>
+	<style type="text/css">
+		.mapTooltip {
+			position:fixed;
+			background-color : #fff;
+			moz-opacity:0.70;
+			opacity: 0.70;
+			filter:alpha(opacity=70);
+			border-radius:10px;
+			padding : 10px;
+			z-index: 1000;
+			max-width: 200px;
+			display:none;
+			color:#343434;
+		}
+		
+		.cityFrance {
+			background-color:#343434;
+			border-radius:10px;
+			width:400px;
+		}
+		
+		.mapLegend {
+		}
+		
+		h1 {
+			font-size:30px;
+			color:#3d3d3d;
+			margin:auto;
+			margin-top:50px;
+		}
+		
+		h2 {
+			font-size:22px;
+			color:#3d3d3d;
+			margin-top:50px;
+		}
+		
+		.container {
+			margin:auto;
+			width:80%;
+		}
+		
+		.zoomIn, .zoomOut {
+			background-color:#fff;
+			border:1px solid #ccc;
+			color:#000;
+			width:15px;
+			height:15px;
+			line-height: 15px;
+			text-align:center;
+			border-radius:3px;
+			cursor:pointer;
+			position:absolute;
+			top : 10px;
+			font-weight:bold;
+			left : 10px;
+			
+			-webkit-user-select: none; // For Webkit
+			-khtml-user-select: none;
+			-moz-user-select: none; // For Mozilla
+			-o-user-select: none;
+			user-select: none; // Default
+		}
+		
+		.zoomOut {
+			top:30px;
+		}
+		
+		.map {
+			position:relative;
+		}
+		
+</style>
+</head>
+
+<body>
+	<div class="container">
+	
+		<h1>Map examples</h1>
+	
+		<h2>Minimal example (France)</h2>
+		<div class="maparea1">
+			<div class="map">
+				<span>Alternative content for the map</span>
+			</div>
+		</div>
+		
+		<h2>Refreshable map of France with coloured cities and areas labels and zoom buttons</h2>
+		<div class="maparea2">
+			<input type="button" value="Update the map !" id="refreshmaparea2" />
+			<div class="map">
+				<span>Alternative content for the map</span>
+			</div>
+		</div>
+		
+		<h2>Map with some overloaded parameters and 'onclick' callback on areas (France)</h2>
+		<div class="maparea3">
+			<div class="map">
+				<span>Alternative content for the map</span>
+			</div>
+		</div>
+
+		<h2>Population of France by department with a legend</h2>
+		<div class="maparea4">
+			<div class="map">
+				<span>Alternative content for the map</span>
+			</div>
+			<div class="areaLegend">
+				<span>Alternative content for the legend</span>
+			</div>
+		</div>
+
+		<h2>Population of the 1000 more populated french cities with a legend</h2>
+		<div class="maparea5">
+			<div class="map">
+				<span>Alternative content for the map</span>
+			</div>
+			<div class="cityFrance">
+				<span>Alternative content for the legend</span>
+			</div>
+		</div>
+
+		<h2>Map of the world with the population by country</h2>
+		<div class="maparea6">
+			<div class="map">
+				<span>Alternative content for the map</span>
+			</div>
+			<div class="areaLegend">
+				<span>Alternative content for the legend</span>
+			</div>
+			<div class="plotLegend">
+				<span>Alternative content for the legend</span>
+			</div>
+		</div>
+
+		<h2>Map of USA with some plotted cities</h2>
+		<div class="maparea7">
+			<div class="map">
+				<span>Alternative content for the map</span>
+			</div>
+		</div>
+		
+	</div>
+	
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js" charset="utf-8" ></script>
+	<script src="js/raphael/raphael-min.js" charset="utf-8" ></script>
+	<script src="js/jquery.mapael.js" charset="utf-8" ></script>
+	<script src="js/maps/france_departments.js" charset="utf-8" ></script>
+	<script src="js/maps/world_countries.js" charset="utf-8" ></script>
+	<script src="js/maps/usa_states.js" charset="utf-8" ></script>
+	<script src="examples.js" charset="utf-8" ></script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1155px" height="883px" viewBox="0 0 1155 883" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 16</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFCD42" offset="0%"></stop>
+            <stop stop-color="#FFD074" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="8.61779604%" x2="50%" y2="91.5687334%" id="linearGradient-2">
+            <stop stop-color="#B1CAFF" offset="0%"></stop>
+            <stop stop-color="#88ADFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sing_landing-copy" transform="translate(-765.000000, -3710.000000)">
+            <g id="Group-16" transform="translate(695.000000, 3563.000000)">
+                <rect id="Rectangle-16-Copy" fill="url(#linearGradient-1)" opacity="0.249999985" transform="translate(923.373151, 529.926836) rotate(-288.000000) translate(-923.373151, -529.926836) " x="653.103952" y="-353.149365" width="540.538397" height="1766.1524" rx="270.269198"></rect>
+                <path d="M960.529848,297.814382 L962.216577,297.814382 C978.565538,297.814382 991.81899,311.067834 991.81899,327.416795 L991.81899,330.921435 C991.81899,347.270397 978.565538,360.523849 962.216577,360.523849 L962.216577,360.523849 C945.867615,360.523849 932.614163,347.270397 932.614163,330.921435 L932.614163,325.730067 L932.614163,325.730067 C932.614163,310.31266 945.112441,297.814382 960.529848,297.814382 Z" id="Rectangle-16-Copy-16" fill="url(#linearGradient-1)" opacity="0.299440299" transform="translate(962.216577, 329.169115) rotate(8.000000) translate(-962.216577, -329.169115) "></path>
+                <rect id="Rectangle-16-Copy-20" fill="#FFFFFF" transform="translate(996.238683, 440.960509) rotate(27.000000) translate(-996.238683, -440.960509) " x="985.837835" y="380.984508" width="20.801696" height="119.952002" rx="10.400848"></rect>
+                <rect id="Rectangle-16-Copy-17" fill="url(#linearGradient-2)" opacity="0.258628731" transform="translate(875.088536, 1001.354734) rotate(8.000000) translate(-875.088536, -1001.354734) " x="847.324992" y="973.593453" width="55.527089" height="55.5225618" rx="27.7612809"></rect>
+                <rect id="Rectangle-16-Copy-18" fill="url(#linearGradient-2)" opacity="0.313491138" transform="translate(151.731672, 642.056847) rotate(8.000000) translate(-151.731672, -642.056847) " x="133.330172" y="623.656847" width="36.8030007" height="36.8" rx="18.4"></rect>
+                <rect id="Rectangle-16-Copy-26" fill="url(#linearGradient-1)" opacity="0.552763526" transform="translate(562.242173, 926.645033) rotate(8.000000) translate(-562.242173, -926.645033) " x="545.040771" y="907.265033" width="34.402805" height="38.7600006" rx="17.2014025"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
