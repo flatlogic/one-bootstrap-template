@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="34px" viewBox="0 0 32 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sing_landing" transform="translate(-1000.000000, -1701.000000)">
+            <g id="Page-1" transform="translate(1000.000000, 1701.000000)">
+                <polygon id="Fill-1" fill="#DD0031" points="15.8675478 0.00027755102 -0.00027826087 5.64358367 2.4205913 26.5709306 15.8675478 34.0002776 29.3145043 26.5709306 31.7353739 5.64358367"></polygon>
+                <polygon id="Fill-2" fill="#C3002F" points="15.8675478 0.00027755102 15.8675478 3.77427755 15.8675478 3.75693061 15.8675478 20.9782776 15.8675478 34.0002776 29.3145043 26.5709306 31.7353739 5.64358367"></polygon>
+                <path d="M18.7648696,17.918 L12.970087,17.918 L15.8674783,10.9653469 L18.7648696,17.918 Z M15.8674783,3.75734694 L5.94817391,25.942 L9.64695652,25.942 L11.6406957,20.978 L20.0601739,20.978 L22.0546087,25.942 L25.7526957,25.942 L15.8674783,3.75734694 Z" id="Fill-3" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

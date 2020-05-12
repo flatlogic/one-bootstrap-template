@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="399px" height="1094px" viewBox="0 0 399 1094" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 8</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFCD42" offset="0%"></stop>
+            <stop stop-color="#FFD074" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="8.61779604%" x2="50%" y2="91.5687334%" id="linearGradient-2">
+            <stop stop-color="#B1CAFF" offset="0%"></stop>
+            <stop stop-color="#88ADFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sing_landing-copy" transform="translate(-101.000000, -1178.000000)">
+            <g id="Group-8" transform="translate(95.000000, 1165.000000)">
+                <rect id="Rectangle-16-Copy-27" fill="url(#linearGradient-1)" opacity="0.258628731" transform="translate(172.000000, 1026.000000) rotate(8.000000) translate(-172.000000, -1026.000000) " x="156" y="1010" width="32" height="32" rx="16"></rect>
+                <rect id="Rectangle-16-Copy-18" fill="url(#linearGradient-2)" opacity="0.313491138" transform="translate(382.000000, 797.000000) rotate(8.000000) translate(-382.000000, -797.000000) " x="359" y="774" width="46" height="46" rx="23"></rect>
+                <rect id="Rectangle-16-Copy-22" fill="url(#linearGradient-2)" opacity="0.189365672" transform="translate(50.110700, 658.962719) rotate(24.000000) translate(-50.110700, -658.962719) " x="32.1107001" y="578.462719" width="36" height="161" rx="18"></rect>
+                <rect id="Rectangle-16-Copy-32" fill="url(#linearGradient-1)" opacity="0.189365672" transform="translate(69.670174, 46.687438) rotate(41.000000) translate(-69.670174, -46.687438) " x="36.6701739" y="13.5124385" width="66" height="66.3499985" rx="33"></rect>
+                <rect id="Rectangle-16-Copy-23" fill="url(#linearGradient-2)" opacity="0.200967817" transform="translate(81.912463, 1093.992651) rotate(8.000000) translate(-81.912463, -1093.992651) " x="70.0792669" y="1081.52553" width="23.6663917" height="24.9342342" rx="11.8331959"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

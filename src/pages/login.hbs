@@ -1,0 +1,74 @@
+{{#extend "layout" title="Flatlogic One HTML5 Dashboard - Login" extraBodyClass="login-page" contentClass="widget-login-container" wrapperClass="container-fluid"}}
+    {{#content "sidebar" mode="replace"}}{{/content}}
+    {{#content "theme-helper" mode="replace"}}{{/content}}
+    {{#content "navbar" mode="replace"}}{{/content}}
+    {{#content "chat" mode="replace"}}{{/content}}
+    {{#content "content" mode="replace"}}
+        <div class="row align-item-center">
+            <div class="col-xl-3 offset-sm-1 offset-0 col-md-6 col-10 my-auto">
+                <section class="widget widget-login bg-transparent animated fadeInUp">
+                    <header>
+                        <h2>Login</h2>
+                    </header>
+                    <div class="widget-body">
+                        <p class="widget-login-info">
+                            Welcome Back! Please login to your account
+                        </p>
+                        <form class="login-form mt-lg">
+                            <div role="group" class="form-group">
+                                <label for="email" class="d-block">Username</label>
+                                <div>
+                                    <div role="group" class="input-group">
+                                        <input id="username" type="text" value="admin" required="required" placeholder="Admin" class="form-control input-transparent pl-3">
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="group" class="form-group">
+                                <label for="password" class="d-block">Password</label>
+                                <div>
+                                    <div role="group" class="input-group">
+                                        <input id="password" type="password" value="password" required="required" placeholder="Password" class="form-control input-transparent pl-3">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkbox abc-checkbox mb-4 d-flex form-check">
+                                <input id="checkbox1" type="checkbox" class="form-check-input">
+                                <label for="checkbox1" class="mr-auto form-check-label">Remember me</label>
+                                <a href="/">Forgot password?</a>
+                            </div>
+                            <div class="clearfix">
+                                <div class="btn-toolbar">
+                                    <a class="btn btn-warning btn-block" href="index.html">Login</a>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="widget-login-info">
+                                    <p class="widget-login-info text-center line">Or</p>
+                                    <div class="d-flex mb-4 mt-3">
+                                        <p class="mb-0">Login with</p>
+                                        <a href="/">
+                                            <img src="img/icons/facebook.svg" alt="facebook" class="ml-3"></a>
+                                        <a href="/">
+                                            <img src="img/icons/github.svg" alt="github" class="ml-3"></a>
+                                        <a href="/">
+                                            <img src="img/icons/linkedin.svg" alt="linkedin" class="ml-3"></a>
+                                        <a href="/">
+                                            <img src="img/icons/googleplus.svg" alt="google_plus" class="ml-3"></a>
+                                    </div>
+                                    Don't have an account?
+                                    <a class="mr-n-lg" href="register.html">Sign up here!</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+            <img src="img/signin.svg" class="singin" alt="signin">
+        </div>
+    {{/content}}
+    {{#content "footer"}}
+        <footer class="page-footer">
+            Flatlogic One HTML5 Dashboard - Bootstrap Admin Dashboard Template.
+        </footer>
+    {{/content}}
+{{/extend}}

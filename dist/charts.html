@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Light Blue HTML5 Dashboard - Charts</title>
+    <link href="css/application.min.css" rel="stylesheet">
+    <!-- as of IE9 cannot parse css files with more that 4K classes separating in two files -->
+    <!--[if IE 9]>
+        <link href="css/application-ie9-part2.css" rel="stylesheet">
+        <![endif]-->
+    <link rel="shortcut icon" href="img/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="FlatLogic One Lite - Bootstrap 4 Admin Dashboard Template">
+    <meta name="keywords"
+        content="flatlogicone, bootstrap admin template,admin template,admin dashboard,admin dashboard template,admin,dashboard,bootstrap,template">
+    <meta name="author" content="Flatlogic LLC">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <script>
+        /* yeah we need this empty stylesheet here. It's cool chrome & chromium fix
+        chrome fix https://code.google.com/p/chromium/issues/detail?id=167083
+        https://code.google.com/p/chromium/issues/detail?id=332189
+        */
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-36759672-9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-36759672-9');
+    </script>
+    <!-- Yandex.Metrika counter -->
+    <script
+        type="text/javascript"> (function (m, e, t, r, i, k, a) { m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) }; m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a) })(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(48020168, "init", { id: 48020168, clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true, trackHash: true, ecommerce: "dataLayer" }); </script>
+    <!-- /Yandex.Metrika counter -->
+</head>
+
+<body class="">
+    <!-- This is the white navigation bar seen on the top. A bit enhanced BS navbar. See .page-controls in _base.scss. -->
+    <nav class="page-controls navbar navbar-dashboard">
+       
+        <div class="container-fluid">
+            <div class="navbar-header mobile-hidden">
+                <ul class="nav navbar-nav toggle-sidebar">
+                    <li class="d-md-none d-flex nav-item">
+                        <a id="toggleSidebar" class="nav-link">
+                            <i class="la la-bars"></i>
+                        </a>
+                    </li>
+                </ul>
+                <form class="navbar-form d-none d-md-block" role="search">
+                    <div class="form-group">
+                        <div class="input-group input-group-no-border mr-3">
+                            <input class="form-control" id="main-search" type="text" placeholder="Search" aria-describedby="search-icon">
+                            <div class="input-group-append my-auto">
+                               <img src="img/icons/search.svg" id="search-icon" alt="search" width="24px" height="23px" style="margin-left: 12px;">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <ul class="nav navbar-nav float-right">
+                    <li class="dropdown nav-item">
+                        <a href="#"
+                           class="nav-link"
+                           id="notifications-dropdown-toggle"
+                           data-toggle="dropdown"
+                           aria-haspopup="true"
+                           aria-expanded="false"
+                           data-position="bottom-middle-aligned"
+                           data-disable-interaction="false"
+                        >
+                            <i class="icons notifications-icon"></i>
+                            <i class="fa fa-circle text-danger"></i>
+                        </a>
+                        <ul tabindex="-1" class="dropdown-menu dropdown-menu-messages dropdown-menu-right comments">
+                            <p class="dropdown-name">Notifications</p>
+                            <p class="dropdown-date">Today</p>
+                            <li role="presentation">
+                                <a role="menuitem" target="_self" href="#" class="dropdown-item">
+    
+                                        <span class="avatar thumb-sm mr-3">
+                                            <img src="img/avatars/tn1.png" alt="..." class="rounded-circle pt-1">
+                                        </span>
+    
+                                    <div>
+                                        <span> <span class="fw-bold">Jim Tomson </span> removed you to the project <span class="fw-bold"> Flatlogic One</span> </span>
+                                    </div>
+                                    <div>
+                                        <span class="dropdown-time">9:15 AM</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" target="_self" href="#" class="dropdown-item">
+                                        <span class="avatar thumb-sm mr-3">
+                                            <img src="img/avatars/tn2.png" alt="..." class="rounded-circle pt-1">
+                                        </span>
+                                    <div>
+                                        <span> <span class="fw-bold">Elena Bureeva </span> invited you to the project <span class="fw-bold">Flatlogic One</span> </span>
+                                    </div>
+                                    <div>
+                                        <span class="dropdown-time">9:15 AM</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <p class="dropdown-date">Yesterday</p>
+                            <li role="presentation">
+                                <a role="menuitem" target="_self" href="#" class="dropdown-item">
+    
+                                        <span class="avatar thumb-sm mr-3">
+                                            <img src="img/avatars/tn1.png" alt="..." class="rounded-circle pt-1">
+                                        </span>
+    
+                                    <div>
+                                        <span> <span class="fw-bold">Jim Tomson </span> removed you to the project <span class="fw-bold"> Flatlogic One</span> </span>
+                                    </div>
+                                    <div>
+                                        <span class="dropdown-time">9:15 AM</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" target="_self" href="#" class="dropdown-item">
+                                        <span class="avatar thumb-sm mr-3">
+                                            <img src="img/avatars/tn3.png" alt="..." class="rounded-circle pt-1">
+                                        </span>
+                                    <div>
+                                        <span> <span class="fw-bold">Elena Bureeva </span> invited you to the project <span class="fw-bold">Flatlogic One</span> </span>
+                                    </div>
+                                    <div>
+                                        <span class="dropdown-time">9:15 AM</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <button role="menuitem" type="button" class="dropdown-item">
+                                    <span class="ml-auto text-warning">See more
+                                        <i class="fa fa-arrow-right ml-1"></i>
+                                    </span>
+                                </button>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown nav-item">
+                        <a href="#"
+                           class="nav-link"
+                           id="notifications-dropdown-toggle"
+                           data-toggle="dropdown"
+                           aria-haspopup="true"
+                           aria-expanded="false"
+                           data-position="bottom-middle-aligned"
+                           data-disable-interaction="false"
+                        >
+                            <i class="icons email-icon"></i>
+                            <i class="fa fa-circle text-success"></i>
+                        </a>
+                        <ul tabindex="-1" class="dropdown-menu dropdown-menu-messages dropdown-menu-right comments">
+                            <p class="dropdown-name">New Messages</p>
+                            <p class="dropdown-date text-warning mt-n2">5 new messages</p>
+                            <p class="dropdown-date">Today</p>
+                            <li role="presentation">
+                                <a role="menuitem" target="_self" href="#" class="dropdown-item">
+                                        <span class="avatar thumb-sm mr-3">
+                                            <img src="img/avatars/tn1.png" alt="..." class="rounded-circle">
+                                            <span class="dropdown-time">9:15 AM</span>
+                                        </span>
+                                    <div>
+                                         <span class="fw-bold">Jim Tomson </span><br> Hey! How is it going?
+                                    </div>
+                                    <div class="ml-auto">
+                                        <span class="badge badge-secondary badge-pill">2</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" target="_self" href="#" class="dropdown-item">
+                                        <span class="avatar thumb-sm mr-3">
+                                            <img src="img/avatars/tn2.png" alt="..." class="rounded-circle">
+                                            <span class="dropdown-time">9:15 AM</span>
+                                        </span>
+                                    <div>
+                                        <span class="fw-bold">Elena Bureeva </span><br> Good news!
+                                    </div>
+                                    <div class="ml-auto">
+                                        <span class="badge badge-secondary badge-pill">1</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <p class="dropdown-date">Yesterday</p>
+                            <li role="presentation">
+                                <a role="menuitem" target="_self" href="#" class="dropdown-item">
+                                        <span class="avatar thumb-sm mr-3">
+                                            <img src="img/avatars/tn1.png" alt="..." class="rounded-circle">
+                                            <span class="dropdown-time">9:15 AM</span>
+                                        </span>
+                                    <div>
+                                        <span class="fw-bold">Jim Tomson </span><br> Nice to see you again!
+                                    </div>
+                                    <div class="ml-auto">
+                                        <span class="badge badge-secondary badge-pill">1</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" target="_self" href="#" class="dropdown-item">
+                                        <span class="avatar thumb-sm mr-3">
+                                            <img src="img/avatars/tn3.png" alt="..." class="rounded-circle">
+                                            <span class="dropdown-time">9:15 AM</span>
+                                        </span>
+                                    <div>
+                                        <span class="fw-bold">Jim Tomson </span><br> Nice to see you again!
+                                    </div>
+                                    <div class="ml-auto">
+                                        <span class="badge badge-secondary badge-pill">1</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <button role="menuitem" type="button" class="dropdown-item">
+                                    <span class="ml-auto text-warning">See more
+                                        <i class="fa fa-arrow-right ml-1"></i>
+                                    </span>
+                            </button>
+                        </ul>
+                    </li>
+                    <li class="dropdown nav-item">
+                        <a
+                                href="#"
+                                role="button"
+                                class="dropdown-toggle dropdown-toggle-notifications nav-link profile"
+                                id="notifications-dropdown-toggle"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                                data-position="bottom-middle-aligned"
+                                data-disable-interaction="false"
+                        >
+                            <span class="avatar float-left">
+                                <img class="rounded-circle" src="demo/img/people/a7.png" alt="..." >
+                            </span>
+                        </a>
+                        <ul tabindex="-1" class="dropdown-menu dropdown-menu-messages dropdown-menu-right comments profile">
+                            <p class="dropdown-name">Sara Smith</p>
+                            <p class="dropdown-date text-warning mt-n2">Sara_smith@gmail.com</p>
+    
+                            <li role="presentation">
+                                <a role="menuitem" target="_self" href="#" class="dropdown-item">
+                                    <span class="mr-3">
+                                        <img src="img/icons/settings_outlined.svg" alt="...">
+                                    </span>
+                                    <div>
+                                        <span>Settings </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" target="_self" href="#" class="dropdown-item">
+                                        <span class="mr-3">
+                                            <img src="img/icons/profile_outlined.svg" alt="...">
+                                        </span>
+                                    <div>
+                                        <span>Account </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" target="_self" href="login.html" class="dropdown-item">
+                                        <span class="mr-3">
+                                            <img src="img/icons/logout_outlined.svg" alt="...">
+                                        </span>
+                                    <div>
+                                        <span>Log out </span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav><nav id="sidebar" class="sidebar" role="navigation">
+    <!-- need this .js class to initiate slimscroll -->
+    <div class="js-sidebar-content">
+        <header class="logo d-md-block">
+            <a href="https://demo.flatlogic.com/sing-app/">
+                <img src="img/logo.svg" alt="...">
+                <b class="fw-bold">Flatlogic</b> One</a>
+        </header>
+        <h5 class="sidebar-nav-title">App</h5>
+        <ul class="sidebar-nav">
+            <li class="">
+                <!-- an example of nested submenu. basic bootstrap collapse component -->
+                <a href="index.html">
+                    <i class="sidebar-icon dashboard-icon"></i>
+                    <span class="icon">Dashboard</span>
+                </a>
+            </li>
+        </ul>
+        <!-- every .sidebar-nav may have a title -->
+        <h5 class="sidebar-nav-title">Template </h5>
+        <ul class="sidebar-nav">
+            <li class="">
+                <!-- an example of nested submenu. basic bootstrap collapse component -->
+                <a href="typography.html">
+                    <i class="sidebar-icon typography-icon"></i>
+                    <span class="icon">Typography</span>
+
+                </a>
+            </li>
+            <li class="">
+                <!-- an example of nested submenu. basic bootstrap collapse component -->
+                <a href="tables.html">
+                    <i class="sidebar-icon tables-icon"></i>
+                    <span class="icon">Tables</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="collapsed" href="#sidebar-ui" data-toggle="collapse" data-parent="#sidebar">
+                    <i class="sidebar-icon ui-elements"></i>
+                    <span class="icon">UI Elements</span>
+                    <i class="toggle fa fa-angle-down"></i>
+                </a>
+                <ul id="sidebar-ui" class="collapse ">
+                    <li class=""><a href="notifications.html">Notifications</a></li>
+                    <li class=""><a href="icons.html">Icons</a></li>
+                    <li class=""><a href="charts.html">Charts</a></li>
+                    <li class=""><a href="maps_google.html">Google Maps</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="sidebar-nav">
+            <hr>
+            <li class="">
+                <!-- an example of nested submenu. basic bootstrap collapse component -->
+                <a href="#">
+                    <i class="sidebar-icon settings-icon"></i>
+                    <span class="icon">Settings</span>
+
+                </a>
+            </li>
+            <li class="">
+                <!-- an example of nested submenu. basic bootstrap collapse component -->
+                <a href="#">
+                    <i class="sidebar-icon account-icon"></i>
+                    <span class="icon">Account</span>
+                </a>
+            </li>
+            <li class="">
+                <a href="login.html" target="_blank" data-no-pjax>
+                    <i class="sidebar-icon logout-icon"></i>
+                    <span class="icon">Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>    <div class="content-wrap">
+        <!-- main page content. the place to put widgets in. usually consists of .row > .col-lg-* > .widget.  -->
+        <main id="content" class="content" role="main">
+            <!-- Page content -->
+<ol class="breadcrumb">
+    <li class="breadcrumb-item">UI</li>
+    <li class="breadcrumb-item active">Charts</li>
+</ol>
+<div class="row">
+    <div class="col-lg-6 col-xl-5">
+        <section class="widget">
+            <header>
+                <h5>
+                    Flot <span class="fw-semi-bold">Charts</span>
+                </h5>
+                <div class="widget-controls">
+                    <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="img/icons/widget-menu.png" alt="dropdown">
+                        </span>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                            <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                            </button>
+                            <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                            <div tabindex="-1" class="dropdown-divider"></div>
+                            <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="widget-body">
+                <div class="mt mb" id="flot-main" style="width: 100%; height: 260px;"></div>
+                <div class="chart-tooltip" id="flot-main-tooltip" style="opacity: 0"></div>
+                <p class="fs-mini text-muted">
+                    Flot is a <span class="fw-semi-bold">pure</span> JavaScript plotting library for jQuery,
+                    with a
+                    focus on simple usage, attractive looks and interactive features.
+                </p>
+                <h5 class="mt">Interactive <span class="fw-semi-bold">Sparklines</span></h5>
+                <div class="row mt">
+                    <div class="col-md-6">
+                        <div class="stats-row">
+                            <div class="stat-item">
+                                <p class="value5 fw-thin">34 567</p>
+                                <h6 class="name text-muted no-margin fs-mini">Overall Values</h6>
+                            </div>
+                            <div class="stat-item stat-item-mini-chart">
+                                <div class="sparkline" data-type="bar" data-bar-color="#4dc7df" data-height="30"
+                                    data-bar-width="6" data-bar-spacing="2">
+                                    9,12,14,15,10,14,20
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="stats-row">
+                            <div class="stat-item">
+                                <p class="value5 fw-thin">34 567</p>
+                                <h6 class="name text-muted no-margin fs-mini">Overall Values</h6>
+                            </div>
+                            <div class="stat-item stat-item-mini-chart">
+                                <div class="sparkline" data-type="bar" data-bar-color="#ff7769" data-height="30"
+                                    data-bar-width="6" data-bar-spacing="2">
+                                    9,12,14,15,10,14,20
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="fs-mini text-muted">
+                    This jQuery plugin generates sparklines (small inline charts) directly in the browser using
+                    data supplied either inline in the HTML, or via javascript.
+                </p>
+            </div>
+        </section>
+    </div>
+    <div class="col-lg-6 col-xl-7">
+        <div class="row">
+            <div class="col-lg-7">
+                <section class="widget">
+                    <header>
+                        <h5>
+                            Easy <span class="fw-semi-bold">Pie Charts</span>
+                        </h5>
+                        <div class="widget-controls">
+                            <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="img/icons/widget-menu.png" alt="dropdown">
+                        </span>
+                                <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                                    <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                        <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                                    </button>
+                                    <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                                    <div tabindex="-1" class="dropdown-divider"></div>
+                                    <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="widget-body clearfix">
+                        <div class="text-center">
+                            <div class="easy-pie-chart-lg mb-lg" id="easy-pie1" data-percent="73"></div>
+                        </div>
+                        <p class="fs-mini text-muted">
+                            Easy pie chart is a jQuery plugin that uses the canvas element to render simple pie charts
+                            for single values. These charts are highly customizable, very easy to implement, scale to
+                            the resolution of the display of the client to provide sharp charts even on retina displays.
+                        </p>
+                    </div>
+                </section>
+            </div>
+            <div class="col-lg-5">
+                <section class="widget">
+                    <header>
+                        <h5>
+                            Sparkline <span class="fw-semi-bold">Pie Charts</span>
+                        </h5>
+                        <div class="widget-controls">
+                            <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="img/icons/widget-menu.png" alt="dropdown">
+                        </span>
+                                <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                                    <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                        <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                                    </button>
+                                    <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                                    <div tabindex="-1" class="dropdown-divider"></div>
+                                    <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="widget-body">
+                        <p class="fs-mini text-muted">
+                            Example displayed below takes just 1 line of HTML or javascript to generate.
+                        </p>
+                        <div id="sparkline2" class="chart-overflow-bottom mb-4 text-center"></div>
+                        <p class="fs-mini text-muted">
+                            Nevertheless Sparkline charts can be configured quite accurate.
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <section class="widget">
+                    <header>
+                        <h5>
+                            Sparkline <span class="fw-semi-bold">Line Charts</span>
+                        </h5>
+                        <div class="widget-controls">
+                            <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="img/icons/widget-menu.png" alt="dropdown">
+                        </span>
+                                <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                                    <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                        <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                                    </button>
+                                    <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                                    <div tabindex="-1" class="dropdown-divider"></div>
+                                    <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="widget-body clearfix">
+                        <div id="sparkline3" class="chart-overflow-bottom mb-0 text-center"></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <section class="widget">
+            <header>
+                <h5>
+                    <span class="fw-semi-bold">Apex</span> Charts
+                </h5>
+                <div class="widget-controls">
+                    <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="img/icons/widget-menu.png" alt="dropdown">
+                        </span>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                            <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                            </button>
+                            <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                            <div tabindex="-1" class="dropdown-divider"></div>
+                            <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="widget-body">
+                <div class="apexcharts" style="min-height: 95px;">
+                    <div id="apex-chart"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-7 col-xl-7">
+        <section class="widget">
+            <header>
+                <h5>
+                    <span class="fw-semi-bold">D3</span> Charts
+                </h5>
+                <div class="widget-controls">
+                    <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="img/icons/widget-menu.png" alt="dropdown">
+                        </span>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                            <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                            </button>
+                            <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                            <div tabindex="-1" class="dropdown-divider"></div>
+                            <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="widget-body">
+                <p class="fs-mini text-muted">
+                    This is a very young collection of components, with the goal of keeping these components
+                    very customizeable.
+                </p>
+                <div id="nvd32">
+                    <svg></svg>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="col-lg-5 col-xl-5">
+        <section class="widget">
+            <header>
+                <h5>
+                    Realtime <span class="fw-semi-bold">Rickshaw</span>
+                </h5>
+                <div class="widget-controls">
+                    <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="img/icons/widget-menu.png" alt="dropdown">
+                        </span>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                            <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                            </button>
+                            <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                            <div tabindex="-1" class="dropdown-divider"></div>
+                            <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="widget-body">
+                <p class="fs-mini text-muted mb-4">
+                    Rickshaw provides the elements you need to create interactive graphs: renderers, legends,
+                    hovers, range selectors, etc. You put the pieces together.
+                    It's all based on <span class="fw-semi-bold">d3</span> underneath, so graphs are drawn with
+                    standard SVG and styled with CSS.
+                    Customize all you like with techniques you already know.
+                </p>
+                <h5>720 Users</h5>
+                <div class="progress progress-xs">
+                    <div class="progress-bar progress-xs" style="width: 60%;" data-width="60%">
+                    </div>
+                </div>
+                <p class="fs-mini text-muted">
+                    <span class="circle bg-warning-light text-primary">
+                        <i class="fa fa-circle"></i>
+                    </span>
+                    &nbsp;
+                    Target <span class="fw-semi-bold">820</span> users
+                    is <span class="fw-semi-bold">96%</span> reached.
+                </p>
+                <div id="rickshaw" class="mt-5 chart-overflow-bottom"></div>
+            </div>
+        </section>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <section class="widget">
+            <header>
+                <h5>
+                    Morris <span class="fw-semi-bold">Line Charts</span>
+                </h5>
+                <div class="widget-controls">
+                    <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="img/icons/widget-menu.png" alt="dropdown">
+                        </span>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                            <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                            </button>
+                            <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                            <div tabindex="-1" class="dropdown-divider"></div>
+                            <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="widget-body">
+                <p class="fs-mini text-muted">
+                    Good-looking charts shouldn't be difficult.
+                    The public API is terribly simple. It's just one function: <code>Morris.Line(options)</code>,
+                    where options is an object containing some of the following configuration options.
+                </p>
+                <div id="morris1">
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-2 col-xl-3">
+        <section class="widget">
+            <header>
+                <h5>
+                    Area <span class="fw-semi-bold">Sparkline</span>
+                </h5>
+                <div class="widget-controls">
+                    <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="img/icons/widget-menu.png" alt="dropdown">
+                        </span>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                            <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                            </button>
+                            <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                            <div tabindex="-1" class="dropdown-divider"></div>
+                            <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="widget-body">
+                <p class="fs-mini text-muted">
+                    Each example displayed below takes just 1 line of HTML or javascript to generate.
+                </p>
+                <div class="stats-row mt">
+                    <div class="stat-item">
+                        <h6 class="name">Overall Growth</h6>
+                        <p class="value">43.75%</p>
+                    </div>
+                    <div class="stat-item">
+                        <h6 class="name">Montly</h6>
+                        <p class="value">86.34%</p>
+                    </div>
+                </div>
+                <p class="text-muted fs-mini">
+                    <span class="fw-semi-bold">17% higher</span> than last month</p>
+                <div id="sparkline1" class="chart-overflow-bottom"></div>
+            </div>
+        </section>
+    </div>
+    <div class="col-lg-5 col-xl-6">
+        <section class="widget">
+            <header>
+                <h5>
+                    Flot <span class="fw-semi-bold">Bars</span>
+                </h5>
+                <div class="widget-controls">
+                    <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="img/icons/widget-menu.png" alt="dropdown">
+                        </span>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                            <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                            </button>
+                            <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                            <div tabindex="-1" class="dropdown-divider"></div>
+                            <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="widget-body">
+                <div class="mt-lg mb-4" id="flot-bar" style="width: 100%; height: 260px;"></div>
+                <p class="fs-mini text-muted">
+                    Flot is a <span class="fw-semi-bold">pure</span> JavaScript plotting library for jQuery,
+                    with a
+                    focus on simple usage, attractive looks and interactive features.
+                </p>
+            </div>
+        </section>
+    </div>
+    <div class="col-lg-5 col-xl-3">
+        <section class="widget">
+            <header>
+                <h5>
+                    Morris <span class="fw-semi-bold">Donut Charts</span>
+                </h5>
+                <div class="widget-controls">
+                    <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="img/icons/widget-menu.png" alt="dropdown">
+                        </span>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                            <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                                <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                            </button>
+                            <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                            <div tabindex="-1" class="dropdown-divider"></div>
+                            <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="widget-body">
+                <div id="morris3">
+                </div>
+                <p class="fs-mini text-muted">
+                    Donuts a great for representing some parted information like traffice sources,
+                    disk partitions, etc.
+                    This really couldn't be easier. Create a Donut chart using
+                    <code>Morris.Donut(options)</code>,
+                    with only few options.
+                </p>
+            </div>
+        </section>
+    </div>
+</div>
+
+
+            <footer class="content-footer hidden-print">
+                Flatlogic One Lite - Bootstrap Admin Dashboard Template Made by <a href="https://flatlogic.com"
+                    rel="nofollow" target="_blank" class="text-dark">Flatlogic</a>
+            </footer>
+        </main>
+    </div>
+    <!-- The Loader. Is shown when pjax happens -->
+    <div class="loader-wrap hiding hide">
+        <i class="fa fa-circle-o-notch fa-spin-fast"></i>
+    </div>
+
+    <!-- common libraries. required for every page-->
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/jquery-pjax/jquery.pjax.js"></script>
+    <script src='../node_modules/popper.js/dist/umd/popper.js'></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../node_modules/bootstrap/js/dist/util.js"></script>
+    <script src="../node_modules/widgster/widgster.js"></script>
+    <script src="../node_modules/hammerjs/hammer.js"></script>
+    <script src='../node_modules/jquery-slimscroll/jquery.slimscroll.js'></script>
+    <script src="../node_modules/jquery-hammerjs/jquery.hammer.js"></script>
+
+    <!-- common app js -->
+    <script src="js/settings.js"></script>
+    <script src="js/app.js"></script>
+
+    <!-- Page scripts -->
+
+<script src="../node_modules/raphael/raphael.min.js"></script>
+<script src="../node_modules/jquery-sparkline/jquery.sparkline.js"></script>
+<script src="../node_modules/d3/d3.min.js"></script>
+<script src="../node_modules/rickshaw/rickshaw.min.js"></script>
+<script src='../node_modules/apexcharts/dist/apexcharts.js'></script>
+
+<script src='../node_modules/flotanimator/jquery.flot.animator.min.js'></script>
+<script src="../node_modules/flot/jquery.flot.js"></script>
+<script src="../node_modules/flot-orderbars/js/jquery.flot.orderBars.js"></script>
+<script src="../node_modules/flot/jquery.flot.selection.js"></script>
+<script src="../node_modules/flot/jquery.flot.time.js"></script>
+
+<script src="../node_modules/nvd3/build/nv.d3.min.js"></script>
+<script src="../node_modules/morris.js/morris.min.js"></script>
+<script src="../node_modules/easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+
+<!-- page specific js -->
+<script src="js/charts/charts.js"></script>
+</body>
+
+</html>

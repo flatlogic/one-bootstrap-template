@@ -1,0 +1,79 @@
+{{#extend "layout" title="Light Blue HTML5 Dashboard - UI Notifications"}}
+{{#content "sidebar"}}
+{{> sidebar active="ui_notifications"}}
+{{/content}}
+{{#content "content" mode="replace"}}
+<ol class="breadcrumb">
+    <li class="breadcrumb-item active">Notifications</li>
+</ol>
+<section class="widget">
+    <header>
+        <h6>
+            Notifications
+        </h6>
+        <div class="widget-controls">
+            <div class="dropdown">
+                        <span data-toggle="dropdown" aria-haspopup="true" class="" aria-expanded="false">
+                            <img src="img/icons/widget-menu.png" alt="dropdown">
+                        </span>
+                <div tabindex="-1" role="menu" aria-hidden="true" class="bg-widget-transparent dropdown-menu dropdown-menu-right" style="padding: 10px;">
+                    <button type="button" title="Reload" tabindex="0" role="menuitem" class="dropdown-item">Reload &nbsp;&nbsp;
+                        <span class="badge badge-pill badge-success animated bounceIn">
+                                    <strong>9</strong>
+                                </span>
+                    </button>
+                    <button type="button" title="Full Screen" tabindex="0" role="menuitem" class="dropdown-item">Fullscreen</button>
+                    <div tabindex="-1" class="dropdown-divider"></div>
+                    <button type="button" title="Close" tabindex="0" role="menuitem" class="dropdown-item" data-widgster="close">Close</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="widget-body">
+        <div class="row">
+            <div class="col-lg-4">
+                <h5 class="mt-3">Layout options</h5>
+                <p>There are few position options available for notifications. You can click any of them
+                    to change notifications position:</p>
+                <div class="location-selector">
+                    <div class="bit top left" data-position="top left"></div>
+                    <div class="bit top right" data-position="top right"></div>
+                    <div class="bit top" data-position="top"></div>
+                    <div class="bit bottom left" data-position="bottom left"></div>
+                    <div class="bit bottom right" data-position="bottom right"></div>
+                    <div class="bit bottom" data-position="bottom"></div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <h5 class="mt-3">Notification Types</h5>
+                <p>Different types of notifications for lost of use cases. Custom classes are also supported.</p>
+                <p><a class="btn btn-info" id="show-info-message" href="#">INFO MESSAGE</a></p>
+                <p><a class="btn btn-danger" id="show-error-message" href="#">ERROR MESSAGE</a></p>
+                <p><a class="btn btn-success" id="show-success-message" href="#">SUCCESS MESSAGE</a></p>
+            </div>
+            <div class="col-lg-4">
+                <h5 class="mt-3">Dead Simple Usage</h5>
+                <p>Just few lines of code to instantiate a notifications object. Does not require passing any options:
+                </p>
+                <pre><code>Messenger().post("Thanks for checking out Messenger!");</code></pre>
+                <p>More complex example:</p>
+                <pre><code>Messenger().post({
+    message: 'There was an explosion while processing your request.',
+    type: 'error',
+    showCloseButton: true
+});</code></pre>
+            </div>
+        </div>
+    </div>
+</section>
+{{/content}}
+{{#content "scripts"}}
+<script src="../node_modules/underscore/underscore-min.js"></script>
+<script src="../node_modules/backbone/backbone.js"></script>
+<script src="../node_modules/messenger/build/js/messenger.js"></script>
+<script src="../node_modules/messenger/build/js/messenger-theme-flat.js"></script>
+<script src="../node_modules/messenger/docs/welcome/javascripts/location-sel.js"></script>
+<!-- page specific js -->
+<script src="js/components/ui-notifications.js"></script>
+{{/content}}
+{{/extend}}

@@ -1,0 +1,254 @@
+@mixin navbar-vertical-align($element-height) {
+  margin-top: (($navbar-height - $element-height) / 2);
+  margin-bottom: (($navbar-height - $element-height) / 2);
+}
+
+// Classes to be applied for high ppi displays
+// -------------------------
+@mixin retina(){
+  @media (min--moz-device-pixel-ratio: 1.3),
+           (-o-min-device-pixel-ratio: 2.6/2),
+      (-webkit-min-device-pixel-ratio: 1.3),
+              (min-device-pixel-ratio: 1.3),
+                  (min-resolution: 1.3dppx) {
+    @content;
+  }
+}
+
+// Common thumbnail properties
+// -------------------------
+@mixin thumb($parent, $size){
+  #{$parent} {
+    width: $size;
+
+    > .glyphicon,
+    > .fa{
+      line-height: $size;
+    }
+  }
+}
+
+// Generates single property classes
+// -------------------------
+@mixin property-variants($base, $property, $variants: ()){
+  @each $size, $value in $variants {
+    @if $size == 'md'{
+      #{$base} {
+        #{$property}: $value;
+      }
+      #{$base}-n {
+        #{$property}: $value;
+      }
+    }
+    #{$base}-#{$size} {
+      #{$property}: $value;
+    }
+    #{$base}-n-#{$size} {
+      #{$property}: -$value;
+    }
+  }
+}
+
+@mixin keyframes($name){
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin form-control-validation($color) {
+  // Color the label and help text
+  .form-control-feedback,
+  .form-control-label,
+  .form-check-label,
+  .form-check-inline,
+  .custom-control {
+    color: $color;
+  }
+
+  // Set the border and box shadow on specific inputs to match
+  .form-control {
+    border-color: $color;
+
+    @if $enable-rounded {
+      &:focus {
+        box-shadow: $input-box-shadow, 0 0 6px lighten($color, 20%);
+      }
+    }
+  }
+
+  // Set validation states also for addons
+  .input-group-text{
+    color: $color;
+    border-color: $color;
+    background-color: lighten($color, 40%);
+  }
+}
+
+@mixin reset-filter() {
+  filter: "progid:DXImageTransform.Microsoft.gradient(enabled = false)";
+}
+
+@mixin chat-sidebar-style($mainColor, $mainBGColor, $hoverColor, $inputBG, $inputColor, $placeHolderColor) {
+  border-left: none;
+  color: $mainColor;
+  background-color: $mainBGColor;
+  .chat-sidebar-content {
+    .chat-sidebar-header{
+      background-color: $mainBGColor;
+      .chat-sidebar-title{
+        color: $mainColor;
+      }
+      .input-group-text{
+        background-color: $inputBG;
+        border: none;
+      }
+      #chat-sidebar-search {
+        color: $inputColor;
+        &::placeholder {
+          color: $placeHolderColor
+        }
+      }
+    }
+    .chat-sidebar-chat.chat-sidebar-panel.open {
+      background-color: $mainBGColor;
+      .title > a {
+        color: $mainColor;
+      }
+      .message-list {
+        background-color: $mainBGColor;
+      }
+    }
+    .slimScrollDiv{
+      .chat-sidebar-contacts{
+        .sidebar-nav-title{
+          color: $mainColor;
+        }
+        .list-group{
+          .active{
+            a{
+              background-color: $mainBGColor;
+              &:hover{
+                background-color: $hoverColor;
+              }
+              .message-sender, .message-preview{
+                color: $mainColor;
+              }
+            }
+          }
+          a{
+            background-color: $mainBGColor;
+            &:hover{
+              background-color: $hoverColor;
+            }
+            .message-sender, .message-preview{
+              color: $mainColor;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@mixin nav-style($bgcolor, $color, $sColor, $sBgColor, $sBgFColor, $sPColor){
+  background-color: $bgcolor;
+  .container-fluid {
+    .navbar-header {
+      .navbar-brand {
+        color: $color;
+      }
+      .la-refresh, .la-times, .la-search, .la-bars {
+        color: $color;
+      }
+      .navbar-nav {
+        .nav-item {
+          a {
+            color: $color;
+          }
+        }
+      }
+    }
+    #main-search {
+      color: $sColor;
+      background: $sBgColor;
+
+      &:focus {
+        background-color: $sBgFColor!important;
+      }
+
+      &::placeholder {
+        color: $sPColor;
+      }
+    }
+  }
+};
+@mixin sidebar-style($mainColor, $mainBGColor, $iconColor, $hoverColor, $pbColor, $activeColor ) {
+  color: $mainColor;
+  border-right: none;
+  background-color: $mainBGColor;
+  .sidebar-nav-title{
+    color: $mainColor!important;
+  }
+  .logo > a{
+    color: $mainColor!important;
+  }
+  .sidebar-nav>.open>a{
+    background-color: $activeColor!important;
+  }
+  .sidebar-nav{
+    li{
+      a{
+        color: $mainColor!important;
+        &:hover{
+          background-color: $hoverColor!important;
+        }
+      }
+    }
+    .active a{
+      background-color: $activeColor!important;
+      color: $mainColor!important;
+      span{
+        background-color: $mainColor!important;
+        padding-left: 0px;
+        i{
+          color: $iconColor!important;
+        }
+      }
+    }
+    ul{
+      background-color: $activeColor!important;
+    }
+  }
+  .sidebar-labels>li>a{
+    color: $mainColor!important;
+  }
+  .sidebar-alerts{
+    .progress{
+      background-color: $pbColor!important;
+    }
+  }
+
+}
+
+@mixin chat-avatar($value){
+  width: $value;
+  height: $value;
+  min-width: $value;
+  position: relative;
+  .status {
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    border: 1px solid $white;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,52 @@
+@import "variables";
+@import "mixins";
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "../fonts/flaticon/flaticon";
+@import "../../node_modules/font-awesome/scss/font-awesome.scss";
+@import "../../node_modules/line-awesome/dist/css/line-awesome.css";
+@import "../../node_modules/animate.css/animate";
+@import "../../node_modules/select2/dist/css/select2"; //import as css to keep image urls correct
+@import "../../node_modules/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.scss";
+@import "../../node_modules/glyphicons-halflings/scss/glyphicons-halflings";
+
+@import "bootstrap-override";
+@import "select2-bootstrap-css-override";
+@import "libs-override";
+//
+
+@import "../../node_modules/rickshaw/rickshaw";
+//for tempusdominus-bootstrap-4 lib we need to define some obsolete bs4 variables:
+//$btn-primary-bg: theme-color('primary');
+//$btn-primary-color: $white;
+//$gray-lighter: $gray-300;
+@import "../../node_modules/apexcharts/dist/apexcharts";
+@import "../../node_modules/tempusdominus-bootstrap-4/src/sass/tempusdominus-bootstrap-4";
+@import "../../node_modules/nvd3/build/nv.d3";
+@import "../../node_modules/morris.js/morris";
+@import "../../node_modules/backgrid/lib/backgrid";
+@import "../../node_modules/datatables/media/css/jquery.dataTables";
+@import "../../node_modules/messenger/build/css/messenger";
+@import "../../node_modules/messenger/build/css/messenger-spinner";
+@import "../../node_modules/magnific-popup/src/css/main";
+@import "../../node_modules/metrojs/release/MetroJs.Full/MetroJs";
+@import "../../node_modules/bootstrap-markdown/css/bootstrap-markdown.min";
+@import "../../node_modules/jasny-bootstrap/dist/css/jasny-bootstrap";
+@import "../../node_modules/owl.carousel/dist/assets/owl.theme.green.min.css";
+
+@import "custom-libs-override";
+
+//end custom libs
+
+//everything below this line is required for essential styling
+
+@import "general";
+@import "global-transitions";
+@import "base";
+
+@import "widgets";
+@import "utils";
+@import "print";
+
+@import "font";

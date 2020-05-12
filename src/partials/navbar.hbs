@@ -1,0 +1,242 @@
+<!-- This is the white navigation bar seen on the top. A bit enhanced BS navbar. See .page-controls in _base.scss. -->
+<nav class="page-controls navbar navbar-dashboard">
+  {{con}} {{con1}}
+    <div class="container-fluid">
+        <div class="navbar-header mobile-hidden">
+            <ul class="nav navbar-nav toggle-sidebar">
+                <li class="d-md-none d-flex nav-item">
+                    <a id="toggleSidebar" class="nav-link">
+                        <i class="la la-bars"></i>
+                    </a>
+                </li>
+            </ul>
+            <form class="navbar-form d-none d-md-block" role="search">
+                <div class="form-group">
+                    <div class="input-group input-group-no-border mr-3">
+                        <input class="form-control" id="main-search" type="text" placeholder="Search" aria-describedby="search-icon">
+                        <div class="input-group-append my-auto">
+                           <img src="img/icons/search.svg" id="search-icon" alt="search" width="24px" height="23px" style="margin-left: 12px;">
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <ul class="nav navbar-nav float-right">
+                <li class="dropdown nav-item">
+                    <a href="#"
+                       class="nav-link"
+                       id="notifications-dropdown-toggle"
+                       data-toggle="dropdown"
+                       aria-haspopup="true"
+                       aria-expanded="false"
+                       data-position="bottom-middle-aligned"
+                       data-disable-interaction="false"
+                    >
+                        <i class="icons notifications-icon"></i>
+                        <i class="fa fa-circle text-danger"></i>
+                    </a>
+                    <ul tabindex="-1" class="dropdown-menu dropdown-menu-messages dropdown-menu-right comments">
+                        <p class="dropdown-name">Notifications</p>
+                        <p class="dropdown-date">Today</p>
+                        <li role="presentation">
+                            <a role="menuitem" target="_self" href="#" class="dropdown-item">
+
+                                    <span class="avatar thumb-sm mr-3">
+                                        <img src="img/avatars/tn1.png" alt="..." class="rounded-circle pt-1">
+                                    </span>
+
+                                <div>
+                                    <span> <span class="fw-bold">Jim Tomson </span> removed you to the project <span class="fw-bold"> Flatlogic One</span> </span>
+                                </div>
+                                <div>
+                                    <span class="dropdown-time">9:15 AM</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" target="_self" href="#" class="dropdown-item">
+                                    <span class="avatar thumb-sm mr-3">
+                                        <img src="img/avatars/tn2.png" alt="..." class="rounded-circle pt-1">
+                                    </span>
+                                <div>
+                                    <span> <span class="fw-bold">Elena Bureeva </span> invited you to the project <span class="fw-bold">Flatlogic One</span> </span>
+                                </div>
+                                <div>
+                                    <span class="dropdown-time">9:15 AM</span>
+                                </div>
+                            </a>
+                        </li>
+                        <p class="dropdown-date">Yesterday</p>
+                        <li role="presentation">
+                            <a role="menuitem" target="_self" href="#" class="dropdown-item">
+
+                                    <span class="avatar thumb-sm mr-3">
+                                        <img src="img/avatars/tn1.png" alt="..." class="rounded-circle pt-1">
+                                    </span>
+
+                                <div>
+                                    <span> <span class="fw-bold">Jim Tomson </span> removed you to the project <span class="fw-bold"> Flatlogic One</span> </span>
+                                </div>
+                                <div>
+                                    <span class="dropdown-time">9:15 AM</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" target="_self" href="#" class="dropdown-item">
+                                    <span class="avatar thumb-sm mr-3">
+                                        <img src="img/avatars/tn3.png" alt="..." class="rounded-circle pt-1">
+                                    </span>
+                                <div>
+                                    <span> <span class="fw-bold">Elena Bureeva </span> invited you to the project <span class="fw-bold">Flatlogic One</span> </span>
+                                </div>
+                                <div>
+                                    <span class="dropdown-time">9:15 AM</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <button role="menuitem" type="button" class="dropdown-item">
+                                <span class="ml-auto text-warning">See more
+                                    <i class="fa fa-arrow-right ml-1"></i>
+                                </span>
+                            </button>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown nav-item">
+                    <a href="#"
+                       class="nav-link"
+                       id="notifications-dropdown-toggle"
+                       data-toggle="dropdown"
+                       aria-haspopup="true"
+                       aria-expanded="false"
+                       data-position="bottom-middle-aligned"
+                       data-disable-interaction="false"
+                    >
+                        <i class="icons email-icon"></i>
+                        <i class="fa fa-circle text-success"></i>
+                    </a>
+                    <ul tabindex="-1" class="dropdown-menu dropdown-menu-messages dropdown-menu-right comments">
+                        <p class="dropdown-name">New Messages</p>
+                        <p class="dropdown-date text-warning mt-n2">5 new messages</p>
+                        <p class="dropdown-date">Today</p>
+                        <li role="presentation">
+                            <a role="menuitem" target="_self" href="#" class="dropdown-item">
+                                    <span class="avatar thumb-sm mr-3">
+                                        <img src="img/avatars/tn1.png" alt="..." class="rounded-circle">
+                                        <span class="dropdown-time">9:15 AM</span>
+                                    </span>
+                                <div>
+                                     <span class="fw-bold">Jim Tomson </span><br> Hey! How is it going?
+                                </div>
+                                <div class="ml-auto">
+                                    <span class="badge badge-secondary badge-pill">2</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" target="_self" href="#" class="dropdown-item">
+                                    <span class="avatar thumb-sm mr-3">
+                                        <img src="img/avatars/tn2.png" alt="..." class="rounded-circle">
+                                        <span class="dropdown-time">9:15 AM</span>
+                                    </span>
+                                <div>
+                                    <span class="fw-bold">Elena Bureeva </span><br> Good news!
+                                </div>
+                                <div class="ml-auto">
+                                    <span class="badge badge-secondary badge-pill">1</span>
+                                </div>
+                            </a>
+                        </li>
+                        <p class="dropdown-date">Yesterday</p>
+                        <li role="presentation">
+                            <a role="menuitem" target="_self" href="#" class="dropdown-item">
+                                    <span class="avatar thumb-sm mr-3">
+                                        <img src="img/avatars/tn1.png" alt="..." class="rounded-circle">
+                                        <span class="dropdown-time">9:15 AM</span>
+                                    </span>
+                                <div>
+                                    <span class="fw-bold">Jim Tomson </span><br> Nice to see you again!
+                                </div>
+                                <div class="ml-auto">
+                                    <span class="badge badge-secondary badge-pill">1</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" target="_self" href="#" class="dropdown-item">
+                                    <span class="avatar thumb-sm mr-3">
+                                        <img src="img/avatars/tn3.png" alt="..." class="rounded-circle">
+                                        <span class="dropdown-time">9:15 AM</span>
+                                    </span>
+                                <div>
+                                    <span class="fw-bold">Jim Tomson </span><br> Nice to see you again!
+                                </div>
+                                <div class="ml-auto">
+                                    <span class="badge badge-secondary badge-pill">1</span>
+                                </div>
+                            </a>
+                        </li>
+                        <button role="menuitem" type="button" class="dropdown-item">
+                                <span class="ml-auto text-warning">See more
+                                    <i class="fa fa-arrow-right ml-1"></i>
+                                </span>
+                        </button>
+                    </ul>
+                </li>
+                <li class="dropdown nav-item">
+                    <a
+                            href="#"
+                            role="button"
+                            class="dropdown-toggle dropdown-toggle-notifications nav-link profile"
+                            id="notifications-dropdown-toggle"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            data-position="bottom-middle-aligned"
+                            data-disable-interaction="false"
+                    >
+                        <span class="avatar float-left">
+                            <img class="rounded-circle" src="demo/img/people/a7.png" alt="..." >
+                        </span>
+                    </a>
+                    <ul tabindex="-1" class="dropdown-menu dropdown-menu-messages dropdown-menu-right comments profile">
+                        <p class="dropdown-name">Sara Smith</p>
+                        <p class="dropdown-date text-warning mt-n2">Sara_smith@gmail.com</p>
+
+                        <li role="presentation">
+                            <a role="menuitem" target="_self" href="#" class="dropdown-item">
+                                <span class="mr-3">
+                                    <img src="img/icons/settings_outlined.svg" alt="...">
+                                </span>
+                                <div>
+                                    <span>Settings </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" target="_self" href="#" class="dropdown-item">
+                                    <span class="mr-3">
+                                        <img src="img/icons/profile_outlined.svg" alt="...">
+                                    </span>
+                                <div>
+                                    <span>Account </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" target="_self" href="login.html" class="dropdown-item">
+                                    <span class="mr-3">
+                                        <img src="img/icons/logout_outlined.svg" alt="...">
+                                    </span>
+                                <div>
+                                    <span>Log out </span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

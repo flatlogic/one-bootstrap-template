@@ -1,0 +1,76 @@
+<nav id="sidebar" class="sidebar" role="navigation">
+    <!-- need this .js class to initiate slimscroll -->
+    <div class="js-sidebar-content">
+        <header class="logo d-md-block">
+            <a href="https://demo.flatlogic.com/sing-app/">
+                <img src="img/logo.svg" alt="...">
+                <b class="fw-bold">Flatlogic</b> One</a>
+        </header>
+        <h5 class="sidebar-nav-title">App</h5>
+        <ul class="sidebar-nav">
+            <li class="{{#activeClass active "dashboard"}} active {{/activeClass}}">
+                <!-- an example of nested submenu. basic bootstrap collapse component -->
+                <a href="index.html">
+                    <i class="sidebar-icon dashboard-icon"></i>
+                    <span class="icon">Dashboard</span>
+                </a>
+            </li>
+        </ul>
+        <!-- every .sidebar-nav may have a title -->
+        <h5 class="sidebar-nav-title">Template </h5>
+        <ul class="sidebar-nav">
+            <li class="{{#activeClass active "typography"}} active {{/activeClass}}">
+                <!-- an example of nested submenu. basic bootstrap collapse component -->
+                <a href="typography.html">
+                    <i class="sidebar-icon typography-icon"></i>
+                    <span class="icon">Typography</span>
+
+                </a>
+            </li>
+            <li class="{{#activeClass active "tables"}} active {{/activeClass}}">
+                <!-- an example of nested submenu. basic bootstrap collapse component -->
+                <a href="tables.html">
+                    <i class="sidebar-icon tables-icon"></i>
+                    <span class="icon">Tables</span>
+                </a>
+            </li>
+            <li class="{{#activeClass active "notifications icons charts maps_google"}} active {{/activeClass}}">
+                <a class="collapsed" href="#sidebar-ui" data-toggle="collapse" data-parent="#sidebar">
+                    <i class="sidebar-icon ui-elements"></i>
+                    <span class="icon">UI Elements</span>
+                    <i class="toggle fa fa-angle-down"></i>
+                </a>
+                <ul id="sidebar-ui" class="collapse {{#activeClass active "notifications icons charts maps_google"}} show {{/activeClass}}">
+                    <li class="{{#activeClass active "notifications"}} active {{/activeClass}}"><a href="notifications.html">Notifications</a></li>
+                    <li class="{{#activeClass active "icons"}} active {{/activeClass}}"><a href="icons.html">Icons</a></li>
+                    <li class="{{#activeClass active "charts"}} active {{/activeClass}}"><a href="charts.html">Charts</a></li>
+                    <li class="{{#activeClass active "maps_google"}} active {{/activeClass}}"><a href="maps_google.html">Google Maps</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="sidebar-nav">
+            <hr>
+            <li class="{{#activeClass active "settings"}} active {{/activeClass}}">
+                <!-- an example of nested submenu. basic bootstrap collapse component -->
+                <a href="#">
+                    <i class="sidebar-icon settings-icon"></i>
+                    <span class="icon">Settings</span>
+
+                </a>
+            </li>
+            <li class="{{#activeClass active "account"}} active {{/activeClass}}">
+                <!-- an example of nested submenu. basic bootstrap collapse component -->
+                <a href="#">
+                    <i class="sidebar-icon account-icon"></i>
+                    <span class="icon">Account</span>
+                </a>
+            </li>
+            <li class="{{#activeClass active "logout"}} active {{/activeClass}}">
+                <a href="login.html" target="_blank" data-no-pjax>
+                    <i class="sidebar-icon logout-icon"></i>
+                    <span class="icon">Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
