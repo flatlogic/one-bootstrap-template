@@ -296,6 +296,11 @@ legend {
     background: #fff;
     border-radius: .3rem;
     width: 320px;
+
+    @include media-breakpoint-down(md) {
+      width: 260px;
+    }
+
     .dropdown-name {
       margin-left: 1.5rem;
       margin-bottom: .5rem;
