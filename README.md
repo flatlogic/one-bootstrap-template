@@ -2,7 +2,7 @@
 
 Free and open-source admin dashboard template built with HTML5 and Bootstrap 4. Developed with ❤️ by [Flatlogic](https://flatlogic.com/). If you love our project please star ⭐️ our repo!
 
-[Download](https://github.com/flatlogic/one-html5-template.git) | [More templates](https://flatlogic.com/templates)
+[Download](https://github.com/flatlogic/one-bootstrap-template.git) | [More templates](https://flatlogic.com/templates)
 
 [![image](https://user-images.githubusercontent.com/43149862/80715665-5d031c80-8aff-11ea-801b-dd22163b4874.png)](https://flatlogic.github.io/one-react-template/)
 
@@ -36,7 +36,7 @@ We have implemented some basic pages, so you can see our template in action.
 
 1. Clone repository
 ```shell
-git clone https://github.com/flatlogic/one-react-template
+git clone https://github.com/flatlogic/one-bootstrap-template.git
 ```
 2. Get in the project folder
 ```shell
@@ -53,7 +53,7 @@ yarn
 ## Quick start
 Run development server
 ```shell
-yarn run serve
+yarn run build
 ```
 
 ## Support
