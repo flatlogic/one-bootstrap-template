@@ -2,12 +2,12 @@
 <html>
 
 <head>
-    <title>Flatlogic One Bootstrap Dashboard - Tables Basic</title>
+    <title>Light Blue Bootstrap Dashboard - Tables Basic</title>
     <link href="css/application.min.css" rel="stylesheet">
     <!-- as of IE9 cannot parse css files with more that 4K classes separating in two files -->
     <!--[if IE 9]>
-    <link href="css/application-ie9-part2.css" rel="stylesheet">
-    <![endif]-->
+        <link href="css/application-ie9-part2.css" rel="stylesheet">
+        <![endif]-->
     <link rel="shortcut icon" href="img/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="FlatLogic One Lite - Bootstrap 4 Admin Dashboard Template">
@@ -40,7 +40,6 @@
 <body class="">
     <!-- This is the white navigation bar seen on the top. A bit enhanced BS navbar. See .page-controls in _base.scss. -->
     <nav class="page-controls navbar navbar-dashboard">
-       
         <div class="container-fluid">
             <div class="navbar-header mobile-hidden">
                 <ul class="nav navbar-nav toggle-sidebar">
@@ -354,9 +353,10 @@
             </li>
         </ul>
     </div>
-</nav>    <div class="content-wrap">
+    </nav>
+    <div class="content-wrap">
         <!-- main page content. the place to put widgets in. usually consists of .row > .col-lg-* > .widget.  -->
-        <main id="content" class="content" role="main">
+    <main id="content" class="content" role="main">
             <!-- Page content -->
 <ol class="breadcrumb">
     <li class="breadcrumb-item">Tables</li>
@@ -387,8 +387,9 @@
                 </div>
             </header>
             <div class="widget-body">
-                <table class="table">
-                    <thead>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
                         <tr>
                             <th class="d-none d-md-table-cell">#</th>
                             <th>Picture</th>
@@ -398,8 +399,8 @@
                             <th class="d-none d-md-table-cell">Size</th>
                             <th>
                         </tr>
-                    </thead>
-                    <tbody>
+                        </thead>
+                        <tbody>
                         <tr>
                             <td class="d-none d-md-table-cell">1</td>
                             <td>
@@ -431,7 +432,7 @@
                             <td class="width-150">
                                 <div class="progress progress-sm">
                                     <div class="progress-bar progress-sm bg-success js-progress-animate"
-                                        style="width: 0;" data-width="29%"></div>
+                                         style="width: 0;" data-width="29%"></div>
                                 </div>
                             </td>
                         </tr>
@@ -466,7 +467,7 @@
                             <td class="width-150">
                                 <div class="progress progress-sm">
                                     <div class="progress-bar progress-sm bg-warning js-progress-animate"
-                                        style="width: 0;" data-width="33%"></div>
+                                         style="width: 0;" data-width="33%"></div>
                                 </div>
                             </td>
                         </tr>
@@ -501,7 +502,7 @@
                             <td class="width-150">
                                 <div class="progress progress-sm">
                                     <div class="progress-bar progress-sm bg-info js-progress-animate"
-                                        style="width: 0;" data-width="38%"></div>
+                                         style="width: 0;" data-width="38%"></div>
                                 </div>
                             </td>
                         </tr>
@@ -536,7 +537,7 @@
                             <td class="width-150">
                                 <div class="progress progress-sm">
                                     <div class="progress-bar progress-sm bg-danger js-progress-animate"
-                                        style="width: 0;" data-width="17%"></div>
+                                         style="width: 0;" data-width="17%"></div>
                                 </div>
                             </td>
                         </tr>
@@ -571,14 +572,15 @@
                             <td class="width-150">
                                 <div class="progress progress-sm">
                                     <div class="progress-bar progress-sm bg-primary js-progress-animate"
-                                        style="width: 0;" data-width="41%"></div>
+                                         style="width: 0;" data-width="41%"></div>
                                 </div>
                             </td>
                         </tr>
-                    </tbody>
+                        </tbody>
 
-                </table>
-                <div class="clearfix">
+                    </table>
+                </div>
+                <div class="clearfix mt-2">
                     <div class="float-right">
                         <button class="btn btn-warning text-uppercase">
                             Send to ...
@@ -984,22 +986,22 @@
 
     <!-- common libraries. required for every page-->
 
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/jquery-pjax/jquery.pjax.js"></script>
-    <script src='node_modules/popper.js/dist/umd/popper.js'></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="node_modules/bootstrap/js/dist/util.js"></script>
-    <script src="node_modules/widgster/widgster.js"></script>
-    <script src="node_modules/hammerjs/hammer.js"></script>
-    <script src='node_modules/jquery-slimscroll/jquery.slimscroll.js'></script>
-    <script src="node_modules/jquery-hammerjs/jquery.hammer.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/jquery-pjax/jquery.pjax.js"></script>
+    <script src='../node_modules/popper.js/dist/umd/popper.js'></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../node_modules/bootstrap/js/dist/util.js"></script>
+    <script src="../node_modules/widgster/widgster.js"></script>
+    <script src="../node_modules/hammerjs/hammer.js"></script>
+    <script src='../node_modules/jquery-slimscroll/jquery.slimscroll.js'></script>
+    <script src="../node_modules/jquery-hammerjs/jquery.hammer.js"></script>
 
     <!-- common app js -->
     <script src="js/settings.js"></script>
     <script src="js/app.js"></script>
 
     <!-- Page scripts -->
-<script src="node_modules/jquery-sparkline/jquery.sparkline.js"></script>
+<script src="../node_modules/jquery-sparkline/jquery.sparkline.js"></script>
 <!-- page specific js -->
 <script src="js/tables/tables-basic.js"></script>
 </body>
