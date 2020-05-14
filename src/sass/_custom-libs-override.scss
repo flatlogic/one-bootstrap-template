@@ -1545,7 +1545,7 @@ ul.messenger-theme-air .messenger-message .messenger-actions a {
   padding: 5px 10px 5px;
   text-transform: capitalize;
   color: #29323a;
-  background-color: #e9ecef;
+  background-color: white;
   border-color: #e9ecef;
 }
 
@@ -1553,7 +1553,7 @@ ul.messenger-theme-air .messenger-message .messenger-actions a {
 ul.messenger-theme-air .messenger-message .messenger-actions a:active {
   box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.18),
     inset 0px 1px rgba(0, 0, 0, 0.05);
-  background: rgba(0, 0, 0, 0.04);
+  background-color: white;
   color: $white;
 }
 /* line 82, ../../src/sass/messenger-theme-air.sass */

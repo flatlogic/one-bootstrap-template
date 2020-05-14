@@ -719,11 +719,18 @@ function initDemoFunctions(){
 
         const mainSidebar = $('#sidebar');
         const toggleSidebar = $('#toggleSidebar');
-        toggleSidebar.on('click', () => {
+
+        $('.content-wrap').on('click', (e) => {
+            if ($('.toggle-sidebar').hasClass('open')) {
+                mainSidebar.removeClass('sidebar-open');
+                $('.toggle-sidebar').removeClass('open');
+            }
+        });
+
+        toggleSidebar.on('click', (e) => {
             mainSidebar.toggleClass('sidebar-open');
             $('.toggle-sidebar').toggleClass('open');
         });
-
 
     }(jQuery);
 }
