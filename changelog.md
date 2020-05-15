@@ -3,4 +3,11 @@
 
 ### Updated
 
-- Release Flatlogic One HTML5 Template
+- Release Flatlogic One Bootstrap Template
+
+## [1.0.1]
+
+### Fixed
+    
+ - Fixed bugs
+
