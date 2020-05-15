@@ -234,16 +234,18 @@ legend {
 
 .dropdown-toggle {
   &::after {
-    font-family: LineAwesome;
-    content: "\F110";
+    font-family: Line Awesome Free,sans-serif;
+    content: "\F107";
     border: none;
     width: auto;
     height: auto;
-    vertical-align: baseline;
+    vertical-align: initial;
     opacity: .8;
     font-size: 85%;
+    font-weight: 600;
 
     .dropup & {
+      font-family: Line Awesome Free,sans-serif;
       content: "\F113";
       border: none;
       vertical-align: baseline;
