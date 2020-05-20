@@ -1,0 +1,52 @@
+{
+  "name": "backbone.paginator",
+  "version": "2.0.8",
+  "description": "A pageable Backbone.Collection superset. Supports server-side/client-side/infinite pagination and sorting.",
+  "main": "lib/backbone.paginator.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/backbone-paginator/backbone.paginator.git"
+  },
+  "keywords": [
+    "backbone"
+  ],
+  "author": "Jimmy Yuen Ho Wong <wyuenho@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/backbone-paginator/backbone.paginator/issues"
+  },
+  "dependencies": {
+    "underscore": "^1.8.0",
+    "backbone": "1.1.2 || 1.2.3 || ^1.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-google": "^0.8.0",
+    "eslint-plugin-compat": "^1.0.3",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-uglify": "^3.0.1",
+    "grunt-documentation": "^1.2.3",
+    "grunt-karma": "^2.0.0",
+    "jquery": "^3.3.1",
+    "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.1.1",
+    "karma-coverage": "^1.1.1",
+    "karma-firefox-launcher": "^1.0.1",
+    "karma-qunit": "^1.2.1",
+    "karma-safari-launcher": "^1.0.0",
+    "lodash": "^4.17.4",
+    "qunitjs": "^1.23.1",
+    "sinon": "^2.3.2"
+  },
+  "scripts": {
+    "lint": "eslint ./lib/backbone.paginator.js test/**/*.js",
+    "format": "eslint --fix ./lib/backbone.paginator.js test/**/*.js",
+    "test": "karma start --single-run --browsers Chrome,Firefox"
+  },
+  "browserslist": [
+    "> 5%"
+  ]
+}

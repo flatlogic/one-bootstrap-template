@@ -1,0 +1,31 @@
+{
+  "name": "jquery.animate-number",
+  "version": "0.0.14",
+  "dependencies": {
+    "jquery": ">= 1.7.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-closure-compiler": "~0.0.21"
+  },
+  "description": "jQuery animate number plugin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aishek/jquery-animateNumber.git"
+  },
+  "keywords": [
+    "jquery",
+    "animate",
+    "number",
+    "jquery-plugin",
+    "ecosystem:jquery"
+  ],
+  "author": "Alexandr Borisov (aishek@gmail.com)",
+  "license": "MIT",
+  "main": "jquery.animateNumber.js",
+  "bugs": {
+    "url": "https://github.com/aishek/jquery-animateNumber/issues"
+  },
+  "homepage": "https://github.com/aishek/jquery-animateNumber"
+}
