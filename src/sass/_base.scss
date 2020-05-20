@@ -185,6 +185,20 @@ body {
   font-family: 'Nunito', sans-serif;
   color: $body-main-color;
   font-size: 16px;
+
+  // Hint for preload icons
+  &:after {
+    content:
+      url(../img/icons/dashboard_filled.svg)
+      url(../img/icons/typography_filled.svg)
+      url(../img/icons/tables_filled.svg)
+      url(../img/icons/ui_elements_filled.svg)
+      url(../img/icons/dashboard_outlined.svg)
+      url(../img/icons/typography_outlined.svg)
+      url(../img/icons/tables_outlined.svg)
+      url(../img/icons/ui_elements_outlined.svg);
+    display: none;
+    }
   }
 
 .content-wrap{
