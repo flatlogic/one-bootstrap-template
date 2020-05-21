@@ -37,8 +37,6 @@ $(function(){
         this.$sidebar = $('#sidebar');
         this.$content = $('#content');
         this.$loaderWrap = $('.loader-wrap');
-        this.$navigationStateToggle = $('#nav-state-toggle');
-        this.$navigationCollapseToggle = $('#nav-collapse-toggle');
         this.settings = window.SingSettings;
         this.pageLoadCallbacks = {};
         this.resizeCallbacks = [];
@@ -55,21 +53,6 @@ $(function(){
         this._initOnResizeCallbacks();
         this._initOnScreenSizeCallbacks();
 
-        this.$sidebar.on('mouseenter', $.proxy(this._sidebarMouseEnter, this));
-        this.$sidebar.on('mouseleave', $.proxy(this._sidebarMouseLeave, this));
-        /**
-         * open navigation in case collapsed sidebar clicked
-         */
-        //$(document).on('click', '.nav-collapsed #sidebar', $.proxy(this.expandNavigation, this));
-        //we don't need this cool feature for big boys
-        if (Sing.isScreen('xs') || Sing.isScreen('sm')) {
-            ('ontouchstart' in window) && this.$content
-                .hammer()
-                .bind('swipeleft', $.proxy(this._contentSwipeLeft, this))
-                .bind('swiperight', $.proxy(this._contentSwipeRight, this));
-        }
-
-        this.checkNavigationState();
 
         if (this.pjaxEnabled){
             /**
@@ -93,8 +76,6 @@ $(function(){
             $(document).on('pjax:end', $.proxy(this.pageLoaded, this));
         }
 
-        this.$navigationStateToggle.on('click', $.proxy(this.toggleNavigationState, this));
-        this.$navigationCollapseToggle.on('click', $.proxy(this.toggleNavigationCollapseState, this));
 
         /* reimplementing bs.collapse data-parent here as we don't want to use BS .panel*/
         this.$sidebar.find('.collapse').on('show.bs.collapse', function(e){
@@ -176,104 +157,6 @@ $(function(){
     };
 
     /**
-     * Collapses navigation if nav-static local storage option is set to false
-     */
-    SingAppView.prototype.checkNavigationState = function(){
-        if (this.isNavigationStatic()){
-            this.staticNavigationState();
-            if (Sing.isScreen('md') || Sing.isScreen('sm') || Sing.isScreen('xs')){
-                this.collapseNavigation();
-            }
-        } else {
-            if (Sing.isScreen('lg') || Sing.isScreen('xl')){
-                var view = this;
-                setTimeout(function(){
-                    view.collapseNavigation();
-                }, this.navCollapseTimeout);
-            } else {
-                this.collapseNavigation();
-            }
-        }
-    };
-
-    SingAppView.prototype.collapseNavigation = function(){
-        //this method only makes sense for non-static navigation state
-        if (this.isNavigationStatic() && (Sing.isScreen('lg') || Sing.isScreen('xl'))) return;
-
-        // $('body').addClass('nav-collapsed');
-        // this.$sidebar.find('.collapse.show').collapse('hide')
-        //     .siblings('[data-toggle=collapse]').addClass('collapsed');
-
-    };
-
-    SingAppView.prototype.expandNavigation = function(){
-        //this method only makes sense for non-static navigation state
-        if (this.isNavigationStatic() && (Sing.isScreen('lg') || Sing.isScreen('xl'))) return;
-
-        // $('body').removeClass('nav-collapsed');
-        // this.$sidebar.find('.active .active').closest('.collapse').collapse('show')
-        //     .siblings('[data-toggle=collapse]').removeClass('collapsed');
-    };
-
-    SingAppView.prototype._sidebarMouseEnter = function(){
-        if (Sing.isScreen('lg') || Sing.isScreen('xl')){
-            this.expandNavigation();
-        }
-    };
-
-    SingAppView.prototype._sidebarMouseLeave = function(){
-        if (Sing.isScreen('lg') || Sing.isScreen('xl')){
-            this.collapseNavigation();
-        }
-    };
-
-    SingAppView.prototype._collapseNavIfSmallScreen = function(){
-        if (Sing.isScreen('xs') || Sing.isScreen('sm') || Sing.isScreen('md')){
-            this.collapseNavigation();
-        }
-    };
-
-    /**
-     * Toggles between static and collapsing navigation states.
-     * Collapsing - navigation automatically collapse when mouse leaves it and expand when enters.
-     * Static - stays always open.
-     */
-
-    SingAppView.prototype.toggleNavigationState = function(){
-        if (this.isNavigationStatic()){
-            this.collapsingNavigationState();
-        } else {
-            this.staticNavigationState();
-        }
-        $(window).trigger('sing-app:content-resize');
-    };
-
-    /**
-     * Turns on static navigation state.
-     * Collapsing navigation state - navigation automatically collapse when mouse leaves it and expand when enters.
-     * Static navigation state - navigation stays always open.
-     */
-    SingAppView.prototype.staticNavigationState = function(){
-        this.settings.set('nav-static', true).save();
-        $('body').addClass('nav-static');
-    };
-
-    /**
-     * Turns on collapsing navigation state.
-     * Collapsing navigation state - navigation automatically collapse when mouse leaves it and expand when enters.
-     * Static navigation state - navigation stays always open.
-     */
-    SingAppView.prototype.collapsingNavigationState = function(){
-        this.settings.set('nav-static', false).save();
-        $('body').removeClass('nav-static');
-        this.collapseNavigation();
-    };
-
-    SingAppView.prototype.isNavigationStatic = function(){
-        return this.settings.get('nav-static') === true;
-    };
-
-    /**
      * Changes active navigation item depending on current page.
      * Should be executed before page load
      * @param event
@@ -296,21 +179,6 @@ $(function(){
             .parents('li').addClass('active');
     };
 
-    /**
-     * Checks whether screen is md or lg and closes navigation if opened
-     * @private
-     */
-    SingAppView.prototype._contentSwipeLeft = function(){
-        var self = this;
-        //this method only makes sense for small screens + ipad
-        setTimeout(function () {
-            if (Sing.isScreen('xl')) return;
-
-            // if (!$('body').is('.nav-collapsed')){
-            //     self.collapseNavigation();
-            // }
-        })
-    };
 
     /**
      * Checks whether screen is md or lg and opens navigation if closed
@@ -525,12 +393,10 @@ $(function(){
 
     window.SingApp = new SingAppView();
 
-//    SingApp.expandNavigation();
 
     initAppPlugins();
     initAppFunctions();
     initAppFixes();
-    initDemoFunctions();
 });
 
 /**
@@ -697,40 +563,3 @@ function initAppFixes(){
     }
 }
 
-/**
- * Demo-only functions. Does not affect the core Sing functionality.
- * Should be removed when used in real app.
- */
-
-function initDemoFunctions(){
-    !function($){
-        $('.theme-helper-toggler').click(() => {
-            $('.theme-helper').toggleClass('theme-helper-opened');
-        });
-        $('#load-notifications-btn').on('ajax-load:end', function () {
-            setTimeout(function(){
-                $('#notifications-list').find('.bg-attention').removeClass('bg-attention');
-            }, 10000)
-        });
-        $('#notifications-toggle').find('input').on('ajax-load:end', function(){
-            $('#notifications-list').find('[data-toggle=tooltip]').tooltip();
-        });
-
-
-        const mainSidebar = $('#sidebar');
-        const toggleSidebar = $('#toggleSidebar');
-
-        $('.content-wrap').on('click', (e) => {
-            if ($('.toggle-sidebar').hasClass('open')) {
-                mainSidebar.removeClass('sidebar-open');
-                $('.toggle-sidebar').removeClass('open');
-            }
-        });
-
-        toggleSidebar.on('click', (e) => {
-            mainSidebar.toggleClass('sidebar-open');
-            $('.toggle-sidebar').toggleClass('open');
-        });
-
-    }(jQuery);
-}
