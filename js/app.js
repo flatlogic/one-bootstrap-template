@@ -179,7 +179,6 @@ $(function(){
             .parents('li').addClass('active');
     };
 
-
     /**
      * Checks whether screen is md or lg and opens navigation if closed
      * @private
@@ -397,6 +396,7 @@ $(function(){
     initAppPlugins();
     initAppFunctions();
     initAppFixes();
+    initDemoFunctions();
 });
 
 /**
@@ -561,5 +561,30 @@ function initAppFixes(){
     var isWebkit = 'WebkitAppearance' in document.documentElement.style;
     if (isWebkit){
     }
+}
+
+/**
+ * Demo-only functions. Does not affect the core Sing functionality.
+ * Should be removed when used in real app.
+ */
+
+function initDemoFunctions(){
+    !function($){
+        const mainSidebar = $('#sidebar');
+        const toggleSidebar = $('#toggleSidebar');
+
+        $('.content-wrap').on('click', (e) => {
+            if ($('.toggle-sidebar').hasClass('open')) {
+                mainSidebar.removeClass('sidebar-open');
+                $('.toggle-sidebar').removeClass('open');
+            }
+        });
+
+        toggleSidebar.on('click', (e) => {
+            mainSidebar.toggleClass('sidebar-open');
+            $('.toggle-sidebar').toggleClass('open');
+        });
+
+    }(jQuery);
 }
 
