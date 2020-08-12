@@ -27,7 +27,7 @@ $(function(){
                     right: 0,
                 },
                 margin: {
-                  bottom: 0
+                    bottom: 0
                 },
                 xaxis: {
                     lines: {
