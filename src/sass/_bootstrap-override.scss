@@ -612,9 +612,12 @@ legend {
       border-bottom-right-radius: $border-radius !important;
       border-bottom-left-radius: 0;
       border-top-left-radius: 0;
-      width: 350px;
+      width: 250px;
       @include media-breakpoint-down(md) {
-        width: 200px;
+        width: 175px;
+      }
+      @include media-breakpoint-up(lg) {
+        width: 250px;
       }
       &::placeholder {
         color: #dbdbdb;
@@ -664,6 +667,21 @@ legend {
     height: $navbar-height;
     z-index: 2;
     position: fixed!important;
+  }
+  .unlock-button {
+    &:hover {
+      text-decoration: none;
+    }
+    button {
+      span {
+        color: white!important;
+      }
+      &:hover {
+        .fa {
+          color: white!important;
+        }
+      }
+    }
   }
 }
 .navbar-header > .navbar-nav{
