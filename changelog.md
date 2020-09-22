@@ -1,15 +1,11 @@
 # Changelog
-## [1.0.0]
+## [1.1.2]
 
-- Release Flatlogic One Bootstrap Template
-
-## [1.0.1]
-
-### Fixed
+### Updated
     
- - Fixed bugs
+- Update dependencies
  
-## [1.1]
+## [1.1.1]
 
 ### Fixed
     
@@ -20,3 +16,13 @@
 ### New Features
 
 - Icons preload
+
+## [1.0.1]
+               
+### Fixed
+                   
+- Fixed bugs
+## [1.0.0]
+
+- Release Flatlogic One Bootstrap Template
+
