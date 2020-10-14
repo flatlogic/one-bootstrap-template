@@ -1,4 +1,15 @@
 # Changelog
+## [1.1.3]
+
+### Updated
+
+- Change logo;
+- Add separate lines in table;
+- Fix btn border radius;
+- Fix unlock button;
+- Fix toggle sidebar;
+- Fix header on mobile;
+
 ## [1.1.2]
 
 ### Updated

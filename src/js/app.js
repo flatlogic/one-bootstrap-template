@@ -397,6 +397,7 @@ $(function(){
     initAppPlugins();
     initAppFunctions();
     initAppFixes();
+    initSidebarLogic();
 });
 
 /**
@@ -553,7 +554,25 @@ function initAppFunctions(){
     }(jQuery);
 
 }
+function initSidebarLogic(){
+    !function($){
 
+        const mainSidebar = $('#sidebar');
+        const toggleSidebar = $('#toggleSidebar');
+
+        $('.content-wrap').on('click', (e) => {
+            if ($('.toggle-sidebar').hasClass('open')) {
+                mainSidebar.removeClass('sidebar-open');
+                $('.toggle-sidebar').removeClass('open');
+            }
+        });
+
+        toggleSidebar.on('click', (e) => {
+            mainSidebar.toggleClass('sidebar-open');
+            $('.toggle-sidebar').toggleClass('open');
+        });
+    }(jQuery);
+}
 /**
  * Sing browser fixes. It's always something broken somewhere
  */

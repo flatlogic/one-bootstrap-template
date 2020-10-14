@@ -136,7 +136,7 @@ $(function(){
     };
 
     function apexChartThird() {
-        var options = {
+        let options = {
             series: [{
                 data: [31, 40, 28, 51, 42, 25, 63]
             }],
@@ -191,7 +191,7 @@ $(function(){
             }
         };
 
-        var chart = new ApexCharts(document.querySelector("#third-apex-chard"), options);
+        let chart = new ApexCharts(document.querySelector("#third-apex-chard"), options);
         chart.render();
     };
 
@@ -250,7 +250,7 @@ $(function(){
             }
         };
 
-        var chart = new ApexCharts(document.querySelector("#fourth-apex-chart"), options);
+        let chart = new ApexCharts(document.querySelector("#fourth-apex-chart"), options);
         chart.render();
     };
 
@@ -327,12 +327,12 @@ $(function(){
             }
         };
 
-        var chart = new ApexCharts(document.querySelector("#fifth-apex-chart"), options);
+        let chart = new ApexCharts(document.querySelector("#fifth-apex-chart"), options);
         chart.render();
     };
 
     function apexChartSixth() {
-        var options = {
+        let options = {
             series: [1732, 253, 154],
             chart: {
                 type: 'donut',
@@ -358,7 +358,7 @@ $(function(){
             }
         };
 
-        var chart = new ApexCharts(document.querySelector("#sixth-apex-chard"), options);
+        let chart = new ApexCharts(document.querySelector("#sixth-apex-chard"), options);
         chart.render();
     };
 

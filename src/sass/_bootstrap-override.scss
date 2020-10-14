@@ -910,6 +910,10 @@ legend {
 // Buttons
 // --------------------------------------------------
 
+.btn {
+  border-radius: 0.25rem;
+}
+
 .dashboard-buttons {
   .custom-dropdown {
     box-shadow: 4px 4px 25px hsla(0,1.9%,42%,.25)!important;
@@ -998,7 +1002,6 @@ legend {
     box-shadow: none;
   }
 }
-
 
 .btn-sm {
   padding-top: .35rem;
