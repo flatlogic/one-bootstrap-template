@@ -299,8 +299,9 @@ legend {
     border-radius: .3rem;
     width: 320px;
 
-    @include media-breakpoint-down(md) {
-      width: 230px;
+    @include media-breakpoint-down(sm) {
+      width: 260px;
+      right: -20px;
     }
 
     .dropdown-name {
@@ -623,22 +624,18 @@ legend {
         color: #dbdbdb;
         opacity: .5;
       }
-
-
     }
 
     .input-group-text {
       order: 1;
       color: #dbdbdb;
       padding: 0.6rem 0.85rem;
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-      border-bottom-left-radius: $border-radius;
-      border-top-left-radius: $border-radius;
+      border-radius: $border-radius 0 0 $border-radius;
       background: #1e1e1e;
     }
   }
 }
+
 .navbar-header {
   .toggle-sidebar {
     position: absolute!important;
@@ -795,6 +792,16 @@ legend {
   }
 }
 
+.navbar-nav .dropdown-menu.dropdown-menu-right.comments li a span.badge {
+  background-color: rgba(255,234,206,0.51);
+  border: 1px solid $yellow;
+  color: $black;
+  line-height: 14px;
+  border-radius: 50%;
+  padding: 0 4px;
+  font-size: 10px;
+}
+
 .navbar-nav .nav-item {
   .nav-link {
     display: flex;
@@ -890,7 +897,6 @@ legend {
 // Breadcrumbs
 // --------------------------------------------------
 
-
 .breadcrumb {
   font-size: 30px;
   padding-left: 0;
@@ -972,7 +978,7 @@ legend {
 .btn-success {
   color: white;
   &:hover, &:active, &:focus {
-    color: white;
+    color: white!important;
   }
 }
 
@@ -1701,11 +1707,11 @@ code {
 // --------------------------------------------------
 .badge {
   display: inline-block;
-  padding: 2px 4px;
-  line-height: 14px; // ensure proper line-height if floated
+  padding: 4px 12px;
+  line-height: 19px; // ensure proper line-height if floated
   text-shadow: none;
-  font-weight: $font-weight-bold;
-  font-size: 11px;
+  font-weight: 600;
+  font-size: 14px;
   color: white;
 
   &.bg-default {
@@ -1721,39 +1727,26 @@ a.badge {
   }
 }
 
-.badge-danger, .badge-secondary, .badge-success, .badge-warning, .badge-info {
-  //color: $gray-900;
-}
-
-a.badge.badge-secondary {
-  background-color: rgba(255,234,206,.51);
-  border: 1px solid #ffad01;
-  color: #323232;
-  font-size: 10px;
+a.badge.badge-secondary, span.badge.badge-secondary {
+  background-color: $gray-600;
+  color: white;
+  font-size: 14px;
   &:hover, &:active {
-    background-color: $navbar-dashboard-link-hover-color;
-    color: $gray-900;
+    background-color: $gray-700;
+    color: white;
   }
 }
 
-span.badge.badge-secondary {
-  background-color: rgba(255,234,206,.51);
-  border: 1px solid #ffad01;
-  color: #323232;
-  font-size: 10px;
+a.badge.badge-warning, span.badge.badge-warning {
+  color: white;
+  &:hover, &:active {
+    color: white;
+  }
 }
 
 a.badge.badge-success {
   &:hover, &:active {
-    background-color: #31cb56;
-    color: $gray-900;
-  }
-}
-
-a.badge.badge-warning {
-  &:hover, &:active {
-    background-color: #ca8500;
-    color: $gray-900;
+    color: white;
   }
 }
 
@@ -1766,28 +1759,12 @@ span.badge.badge-default {
   }
 }
 
-a.badge.badge-info {
-  background-color: #4ebfbb;
+a.badge.badge-light, .badge-light {
+  background-color: $gray-200;
   &:hover, &:active {
-    background-color: #3aa09c;
-    color: $gray-900;
+    background-color: $gray-300;
   }
 }
-span.badge.badge-info {
-  background-color: #4ebfbb;
-}
-
-a.badge.badge-light {
-  color: $gray-900;
-  &:hover, &:active {
-    color: $gray-900;
-  }
-}
-
-.badge-pill {
-  padding: 0px 4px;
-}
-
 
 //
 // Accordion

@@ -1,14 +1,14 @@
 {
   "name": "flatlogic_one_lite",
-  "version": "1.1.3",
-  "description": "Flatlogic One Lite - Bootstrap 4 Admin Dashboard",
+  "version": "1.1.4",
+  "description": "Flatlogic One Lite - Bootstrap 4.5 Admin Dashboard",
   "scripts": {
     "build": "gulp build",
     "watch": "gulp watch"
   },
   "dependencies": {
     "animate.css": "^3.7.2",
-    "apexcharts": "^3.22.0",
+    "apexcharts": "^3.22.2",
     "autosize": "^4.0.2",
     "awesome-bootstrap-checkbox": "^1.0.1",
     "backbone": "^1.4.0",

@@ -1,4 +1,13 @@
 # Changelog
+## [1.1.4]
+
+### Fixed
+
+- Fix buttons, badges;
+- Fix breadcrumbs;
+- Fix success button in notification;
+- Fix dropdown adaptive on header;
+
 ## [1.1.3]
 
 ### Updated
