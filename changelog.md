@@ -1,4 +1,10 @@
 # Changelog
+## [1.1.5]
+
+### Updated
+
+- Update footer on login page
+
 ## [1.1.4]
 
 ### Fixed
