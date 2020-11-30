@@ -232,7 +232,7 @@ $(function() {
     function initNvd32() {
         nv.addGraph(function() {
             var chart = nv.models.multiBarChart()
-                .margin({left: 0, bottom: 30, right: 0})
+                .margin({left: 28, bottom: 30, right: 0})
                 .color([Sing.colors['brand-primary'], Sing.colors['brand-danger']]);
 
             chart.xAxis
