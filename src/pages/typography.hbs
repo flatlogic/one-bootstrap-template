@@ -1,78 +1,76 @@
 {{#extend "layout" title="Light Blue Bootstrap Dashboard - Typography"}}
-    {{#content "sidebar"}}
-        {{> sidebar active="core_typography"}}
-    {{/content}}
-    {{#content "content" mode="replace"}}
-      <ol class="breadcrumb">
-            <li class="breadcrumb-item">Typography</li>
-        </ol>
-        <div class="row">
-            <div class="col-md">
-                <section class="widget">
-                    <div class="widget-body typography">
-                        <h5>Headings</h5>
-                        <div class="widget-padding-sm  rounded">
+{{#content "sidebar"}}
+{{> sidebar active="core_typography"}}
+{{/content}}
+{{#content "content" mode="replace"}}
+<h1 class="page-title">Template > <span class="fw-semi-bold">Typography</span></h1>
+<div class="row">
+    <div class="col-md">
+        <section class="widget">
+            <div class="widget-body typography">
+                <h5>Headings</h5>
+                <div class="widget-padding-sm  rounded">
 
-                            <div class="row">
-                                <div class="col-sm">
-                                    <h1>h1. Heading</h1>
-                                    <h2>h2. Heading</h2>
-                                    <h3>h3. Heading</h3>
-                                    <h4>h4. Heading</h4>
-                                    <h5>h5. Heading</h5>
-                                    <h6>h6. Heading</h6>
-                                </div>
-                            </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <h1>h1. Heading</h1>
+                            <h2>h2. Heading</h2>
+                            <h3>h3. Heading</h3>
+                            <h4>h4. Heading</h4>
+                            <h5>h5. Heading</h5>
+                            <h6>h6. Heading</h6>
                         </div>
                     </div>
-                </section>
-                <section class="widget">
-                    <h5>Text Size</h5>
-                    <div class="widget-body typography">
-                        <div class="widget-padding-sm  rounded">
-                            <h1 class="display-1">Display 1</h1>
-                            <h1 class="display-2">Display 2</h1>
-                            <h1 class="display-3">Display 3</h1>
-                            <h1 class="display-4">Display 4</h1>
-                        </div>
-                    </div>
-                </section>
+                </div>
             </div>
-            <div class="col-md">
-                <section class="widget">
-                    <div class="widget-body typography">
-                        <h5>Typography Colors</h5>
-                        <div class="widget-padding-sm rounded">
-                            <div class="row">
-                                <div class="col-sm">
-                                    <h1 class="">h1. Heading</h1>
-                                    <h2 class="text-warning">h2. Heading</h2>
-                                    <h3 class="text-danger">h3. Heading</h3>
-                                    <h4 class="text-success">h4. Heading</h4>
-                                    <h5 class="text-primary">h5. Heading</h5>
-                                    <h6 class="text-info">h6. Heading</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="widget">
-                    <h5>Basic Text Settings</h5>
-                    <div class="widget-body">
-                        <div class="widget-padding-sm rounded">
-                            <p>You can use the mark tag to <mark>highlight</mark> text.</p>
-                            <p><del>This line of text is meant to be treated as deleted text.</del></p>
-                            <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
-                            <p><small>This line of text is meant to be treated as fine print.</small></p>
-                            <p><em>This line rendered as italicized text.</em></p>
-                            <p><strong>This line rendered as bold text.</strong></p>
-                        </div>
-                    </div>
-                </section>
+        </section>
+        <section class="widget">
+            <h5>Text Size</h5>
+            <div class="widget-body typography">
+                <div class="widget-padding-sm  rounded">
+                    <h1 class="display-1">Display 1</h1>
+                    <h1 class="display-2">Display 2</h1>
+                    <h1 class="display-3">Display 3</h1>
+                    <h1 class="display-4">Display 4</h1>
+                </div>
             </div>
-        </div>
-    {{/content}}
-    {{#content "scripts"}}
-      <script src="js/core/core-typography.js"></script>
-    {{/content}}
+        </section>
+    </div>
+    <div class="col-md">
+        <section class="widget">
+            <div class="widget-body typography">
+                <h5>Typography Colors</h5>
+                <div class="widget-padding-sm rounded">
+                    <div class="row">
+                        <div class="col-sm">
+                            <h1 class="">h1. Heading</h1>
+                            <h2 class="text-warning">h2. Heading</h2>
+                            <h3 class="text-danger">h3. Heading</h3>
+                            <h4 class="text-success">h4. Heading</h4>
+                            <h5 class="text-primary">h5. Heading</h5>
+                            <h6 class="text-info">h6. Heading</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="widget">
+            <h5>Basic Text Settings</h5>
+            <div class="widget-body">
+                <div class="widget-padding-sm rounded">
+                    <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+                    <p><del>This line of text is meant to be treated as deleted text.</del></p>
+                    <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+                    <p><small>This line of text is meant to be treated as fine print.</small></p>
+                    <p><em>This line rendered as italicized text.</em></p>
+                    <p><strong>This line rendered as bold text.</strong></p>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+{{/content}}
+{{#content "scripts"}}
+<script src="js/core/core-typography.js"></script>
+{{/content}}
 {{/extend}}
