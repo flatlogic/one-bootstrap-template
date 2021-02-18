@@ -2,7 +2,7 @@
 
 Free and open-source admin dashboard template built with Bootstrap 4. Developed with ❤️ by [Flatlogic](https://flatlogic.com/). If you love our project please star ⭐️ our repo!
 
-[View Demo](https://flatlogic.github.io/one-bootstrap-template/) | [Download](https://github.com/flatlogic/one-bootstrap-template.git) | [More templates](https://flatlogic.com/templates)
+[View Demo](https://flatlogic.github.io/one-bootstrap-template/) | [Download](https://github.com/flatlogic/one-bootstrap-template.git) | [More templates](https://flatlogic.com/templates)| [Support forum](https://flatlogic.com/forum)
 
 [![image](https://user-images.githubusercontent.com/43149862/80715665-5d031c80-8aff-11ea-801b-dd22163b4874.png)](https://flatlogic.github.io/one-bootstrap-template/)
 
@@ -57,7 +57,7 @@ yarn build
 ```
 
 ## Support
-For any additional information please refer to [Flatlogic homepage](https://flatlogic.com).
+For any additional information please go to our [**support forum**](https://flatlogic.com/forum) and raise your questions or feedback provide there. We highly appreciate your participation!
 
 ## How can I support developers?
 - Star our GitHub repo :star:
