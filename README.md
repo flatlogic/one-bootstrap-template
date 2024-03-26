@@ -6,7 +6,7 @@ Free and open-source admin dashboard template built with Bootstrap 4. Developed 
 
 [![image](https://user-images.githubusercontent.com/43149862/80715665-5d031c80-8aff-11ea-801b-dd22163b4874.png)](https://flatlogic.github.io/one-bootstrap-template/)
 
-This dashboard is a free version (containing only few components) of our [Flatlogic One Bootstrap](https://flatlogic.com/templates/flatlogic-one-react). There are all ready-to-use components, that are in full version. It is built on the top of Bootstrap, so it well supported along the web. You can easy customize template by changing SCSS variables. 
+This dashboard offers a free version (containing only a few components) of our  [Flatlogic One Bootstrap](https://flatlogic.com/templates/flatlogic-one-react), featuring a selection of components from the full version, ready for immediate use. Built atop Bootstrap, it benefits from extensive web support, providing a solid foundation for developers to quickly and efficiently create [business software](https://flatlogic.com/) with a robust and responsive user interface.  You can easily customize the template by changing SCSS variables
 
 ## Features
 
