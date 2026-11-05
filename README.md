@@ -82,3 +82,22 @@ Looking for premium themes and templates? Check out our other template at [flatl
 Flatlogic One React Template version is [MIT](https://github.com/flatlogic/one-react-template/blob/master/LICENCE)-licensed.
 
 * that's a joke actually, but we would really appreciate if you support us by buying a premium version. Anyways free is just free and is limited to only few components, while premium one has more and comes with premium support.
+
+
+### Dependency maintenance and checks
+
+Use Node.js 22.12 or newer and npm. Install with `npm ci`, build with
+`npm run build`, then run `npm run test:build` and `npm test`. The latter
+uses installed Google Chrome to check eight pages, chart rendering, tables,
+Hammer gestures, and sidebar PJAX navigation. The external Google Maps service
+is not exercised.
+
+The canonical npm lock includes all runtime and build dependencies and audits
+with zero known vulnerabilities. The stale Yarn lock is removed. Gulp 5 and
+Dart Sass preserve source maps and binary assets, finish copying before the
+build exits, and report compilation errors. Morris.js has no patched release;
+its line and donut examples now use the existing ApexCharts library with the
+same datasets and colors. Scoped jquery-hammerjs/jQuery and date-picker/Moment
+overrides preserve the tested gesture and date APIs while using patched releases.
+Flot Animator's unchanged asset and license are kept in src/js/vendor because
+its upstream repository has no package.json; its exact upstream commit is documented there.

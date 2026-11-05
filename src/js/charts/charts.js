@@ -319,26 +319,20 @@ $(function() {
         });
     }
 
-    function initMorris1() {
-        $('#morris1').css({height: '343px'}); //safari svg height fix
-        Morris.Line({
-            element: 'morris1',
-            resize: true,
-            data: [
-                { y: '2006', a: 100, b: 90 },
-                { y: '2007', a: 75,  b: 65 },
-                { y: '2008', a: 50,  b: 40 },
-                { y: '2009', a: 75,  b: 65 },
-                { y: '2010', a: 50,  b: 40 },
-                { y: '2011', a: 75,  b: 65 },
-                { y: '2012', a: 100, b: 90 }
+    function initLineChart() {
+        const chart = new ApexCharts(document.getElementById('morris1'), {
+            chart: {type: 'line', height: 343, toolbar: {show: false}},
+            series: [
+                {name: 'Series A', data: [100, 75, 50, 75, 50, 75, 100]},
+                {name: 'Series B', data: [90, 65, 40, 65, 40, 65, 90]}
             ],
-            xkey: 'y',
-            ykeys: ['a', 'b'],
-            labels: ['Series A', 'Series B'],
-            lineColors: [Sing.colors['brand-primary'], Sing.colors['brand-danger']],
-            pointSize: 0
+            xaxis: {categories: ['2006', '2007', '2008', '2009', '2010', '2011', '2012']},
+            colors: [Sing.colors['brand-primary'], Sing.colors['brand-danger']],
+            stroke: {curve: 'smooth', width: 2},
+            markers: {size: 0}
         });
+        chart.render();
+        $(document).one('pjax:start', function () { chart.destroy(); });
     }
 
     function initSparkline1() {
@@ -475,18 +469,21 @@ $(function() {
         SingApp.onResize(_initChart);
     }
 
-    function initMorris3() {
-        $('#morris3').css({height: 180});
-        Morris.Donut({
-            element: 'morris3',
-            backgroundColor: 'none',
-            resize: true,
-            data: [
-                {label: "In-Store Sales", value: 30},
-                {label: "Mail-Order Sales", value: 20}
-            ],
+    function initDonutChart() {
+        const chart = new ApexCharts(document.getElementById('morris3'), {
+            chart: {type: 'donut', height: 180},
+            series: [30, 20],
+            labels: ['In-Store Sales', 'Mail-Order Sales'],
             colors: [Sing.colors['brand-danger'], Sing.colors['brand-primary']],
+            legend: {show: false},
+            dataLabels: {enabled: false},
+            plotOptions: {pie: {donut: {labels: {
+                show: true,
+                total: {show: true, showAlways: false, label: 'In-Store Sales', formatter: function () {return '30';}}
+            }}}}
         });
+        chart.render();
+        $(document).one('pjax:start', function () { chart.destroy(); });
     }
 
     function pageLoad() {
@@ -502,8 +499,8 @@ $(function() {
         initSparkline3();
         apexChartFifth();
         initNvd32();
-        initMorris1();
-        initMorris3();
+        initLineChart();
+        initDonutChart();
         initEasyPie();
         initFlotBar();
     }

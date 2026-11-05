@@ -114,3 +114,6 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 .idea/one-bootstrap-template.iml
+
+/test-results/
+/playwright-report/
