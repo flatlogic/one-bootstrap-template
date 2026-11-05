@@ -52,6 +52,9 @@ function hbs() {
       hb({
         partials: srcPaths.partials,
         helpers: srcPaths.helpers
+      }).on("error", function (error) {
+        console.error(error.message);
+        throw error;
       })
     )
     .pipe(rename({ extname: ".html" }))
@@ -67,6 +70,9 @@ function styles() {
       sass({
         style: "compressed",
         silenceDeprecations: ["import", "global-builtin", "color-functions", "slash-div", "if-function"]
+      }).on("error", function (error) {
+        console.error(error.message);
+        throw error;
       })
     )
     .pipe(rename({ suffix: ".min" }))
@@ -86,3 +92,5 @@ exports.watch = function watch() {
 
 gulp.task("build", gulp.series(clean, gulp.parallel(hbs, styles, copy, copyJS)));
 gulp.task("default", gulp.series("build"));
+
+exports.styles = styles;
